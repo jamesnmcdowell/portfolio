@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2556.7 3600" style="enable-background:new 0 0 2556.7 3600;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#1B68AB;}
+	.st2{font-family:'BauhausStd-Demi';}
+	.st3{font-size:377.9789px;}
+	.st4{fill:#F2E818;}
+	.st5{fill:#C21817;}
+	.st6{font-family:'BauhausStd-Medium';}
+	.st7{font-size:117.9228px;}
+	.st8{font-size:91.0529px;}
+</style>
+<title>splash-mobile</title>
+<desc>Created with Sketch.</desc>
+<g id="splash-mobile">
+	<rect x="450.3" class="st0" width="1662.6" height="3600"/>
+	<g id="mobile" transform="translate(-634.000000, 0.000000)">
+		<rect id="UX-box" x="634" y="0.3" class="st1" width="1087.4" height="1603.9"/>
+		<g id="UX" transform="translate(924.000000, 1593.000000)">
+			<rect id="Rectangle-path" x="744.3" y="-438.3" class="st0" width="53.1" height="55.9"/>
+			<rect id="Rectangle-path_1_" x="692.4" y="-49.2" class="st0" width="52.7" height="85.6"/>
+			<text transform="matrix(6.123234e-17 1 -1 6.123234e-17 480.224 -461.3047)" class="st0 st2 st3">UX</text>
+		</g>
+		<rect id="box-yellow" x="634" y="2645.8" class="st4" width="763.5" height="954.2"/>
+		<rect id="box-blue" x="2435.1" y="0.4" class="st1" width="755.7" height="531.2"/>
+		<rect id="box-red" x="2206.1" y="1316.9" class="st5" width="984.6" height="2283.1"/>
+		<rect id="Rectangle-path_2_" x="1807.3" y="0.4" class="st4" width="101.6" height="3599.6"/>
+		<rect id="Rectangle-path_3_" x="1616.4" y="1604.3" width="52.7" height="1995.7"/>
+		<rect id="Rectangle-path_4_" x="1803.7" y="1125.7" class="st0" width="107.2" height="114.3"/>
+		<rect id="Rectangle-path_5_" x="1721.3" y="1154.8" width="1472.8" height="55.9"/>
+		<rect id="Rectangle-path_6_" x="1680.1" y="2202.8" class="st0" width="1510.6" height="179"/>
+		<text transform="matrix(1 0 0 1 1715.9354 2335.8271)" class="st6 st7">JAMES MCDOWELL</text>
+		<text transform="matrix(1 0 0 1 1186.9872 1715.0059)" class="st6 st8">RESEARCH</text>
+		<text transform="matrix(1 0 0 1 1271.9076 1809.292)" class="st6 st8">DESIGN</text>
+		<rect id="Rectangle-path_7_" x="634" y="2999.5" class="st0" width="2562.4" height="107.2"/>
+		<rect id="Rectangle-path_8_" x="634" y="3027.4" width="2562.4" height="52.7"/>
+	</g>
+</g>
+</svg>
