@@ -1,9 +1,3 @@
-# React-Static - Styled-Components Example
+# Personal Portfolio 
 
-This example includes:
-- Styled-Components
-- Image imports
-- File imports
-- Automatic Routing
-
-To get started, run `react-static create` and use the `styled-components` template.
+Built with React
