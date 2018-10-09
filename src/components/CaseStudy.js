@@ -16,14 +16,22 @@ import storyBoardHH from '../assets/storyboard3-HH.png';
 import storyBoardBG2 from '../assets/storyboard2-BG.png';
 import storyBoardBG1 from '../assets/storyboard1-BG.png';
 
+import { scrollTo } from 'react-static'
+
+const asyncScrollToHeight = async () => {
+    await scrollTo(0, {
+        offset: 0,
+        duration: 1
+    })
+    console.log('Done scrolling!')
+}
 
 let CaseStudy = ({item}) => {
 console.log(item);
+    asyncScrollToHeight();
     return (
     <Container vert>
         <GridContainer>
-            {/* <BlueLine>
-            </BlueLine> */}
            
                 <MainTitle>{item.title}</MainTitle>
                 <SecTitle>Overview</SecTitle>  

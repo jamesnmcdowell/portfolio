@@ -10,7 +10,9 @@ let Header = ({ headerActive, toggleMenu, MenuOpen, match }) =>
     <NavBar>
         <FlexNav> 
             <LogoContainer onClick={() => {  }}>
-                <Logo> JAMES MCDOWELL  </Logo>
+                <Link to="/portfolio">
+                    <Logo> JAMES MCDOWELL  </Logo>
+                </Link>
             </LogoContainer>
             <MenuLinks>
                 <NavLink to="/portfolio"  {...(match.params.page === 'portfolio')? {active: "true"} : {}} >

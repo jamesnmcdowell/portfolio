@@ -27,6 +27,3 @@ let PortfolioGrid = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 3.5rem;
 `;
-
-
-

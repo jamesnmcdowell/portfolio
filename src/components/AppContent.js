@@ -15,15 +15,7 @@ class AppContent extends Component {
             canExitSplash: true
         };
     }
-
-    // componentDidMount () {
-    //     this.splashScrollRef.addEventListener('scroll', () => {console.log('asdasdasdqwdqwdqwd')});
-    // }
-
-    // componentWillUnmount () {
-    //     window.removeEventListener('scroll', this.exitSplash);
-    // }
-
+    
     exitSplash () {
         if (this.state.canExitSplash) this.props.history.replace('/portfolio');
         this.setState({
@@ -39,11 +31,9 @@ class AppContent extends Component {
             <div ref={elem => this.splashScrollRef = elem}>
                 <Content>
                     <Splash  {...{ expand: !match.params.page }}>
-                        {/* <div style={{width: '100%', height: '100%', backgroundColor: 'blue'}} /> */}
                         <img src={splashImage}   />
                     </Splash>
                     <SiteContent {...{ expand: !!match.params.page }}>
-                        {/* <div style={{ width: '100%', height: '100%', backgroundColor: 'red'}} /> */}
                         <Shell {...this.props}>
                             <Routes />
                         </Shell>
@@ -105,28 +95,3 @@ let SiteContent = styled.div`
   overflow: scroll;
   flex: ${props => `${(props.expand) ? '1' : '0'}`}
 `;
-// transform: scale(1.2)translate(-2 %, -2 %)rotate(-45deg);
-
-// width: 100vw;
-// ${
-//   media.phone`
-//       transition: all 1s ease-in-out;
-//       transform: scale(1.5)translate(0,0%)rotate(0deg);
-//     `}
-// ${
-//   media.tablet`
-//       transition: all 1s ease-in-out;
-//       transform: scale(1.4)translate(0%,15.5%)rotate(0deg);
-//     `}
-// ${
-//   media.desktop`
-//       transition: all 1s ease-in-out;
-//       transform: scale(1.3)translate(-2%,18%)rotate(-45deg);
-//     `}
-// ${
-//   media.giant`
-//       transition: all 1s ease-in-out;
-//       transform: scale(1.2)translate(-2%,23.5%)rotate(-45deg);
-//     `} 
-//     } 
-

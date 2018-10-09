@@ -28,13 +28,15 @@ export default {
         getData: () => ({
           items,
         }),
-        children: items.map(item => ({
+        children: items.map(item => {
+          console.log(item); 
+          return ({
           path: `/${item.slug}`,
-          component: 'src/components/CaseStudy',
+          component: `src/components/${item.component}`,
           getData: () => ({
             item
           }),
-        })),
+        }) }),
       },
       {
         path: '/about',

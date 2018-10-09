@@ -7,7 +7,31 @@ import styled from 'styled-components';
 let AboutScreen = () =>
 
   <div>
-
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
+    <h1> sup dudesup dude </h1>
   </div>
 
 export default AboutScreen;

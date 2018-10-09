@@ -5,40 +5,46 @@
         "ctaBody": "We are always looking for highly motivated graduate and undergraduate students that are interested in performing research within the group. Please contact Prof. McDowell for details.",
         "item": [
             {
-                "title": "HouseTracker",
+                "title": "SmartScheduler",
                 "category": "UX Design | UX Research",
                 "image": "housetracker-title.png",
-                "slug": "planner"
+                "slug": "smart-scheduler",
+                "component": "CaseStudy"
             },
             {
                 "title": "Schlotzsky’s Ordering",
                 "category": "UX Design | UX Research",
                 "image": "schlotzkys-title.png",
-                "slug": "cat"
+                "slug": "schlotzskys",
+                "component": "CaseStudy2"
             },
             {
                 "title": "Dengue Fever Visualization",
                 "category": "UX Design | Development",
                 "image": "dengue-title.png",
-                "slug": "3"
+                "slug": "dengue-visualization",
+                "component": "CaseStudy3"
             },
             {
                 "title": "FarmFresh",
                 "category": "UX Design | Development",
                 "image": "farmfresh-title.jpg",
-                "slug": "4"
+                "slug": "farm-fresh",
+                "component": "CaseStudy4"
             },
             {
                 "title": "FoodStash",
                 "category": "UX Design | Development",
                 "image": "foodstash-title.png",
-                "slug": "5"
+                "slug": "5",
+                "component": "CaseStudy5"
             },
             {
-                "title": "LlamaProgramma",
+                "title": "Llama Programma",
                 "category": "Development",
                 "image": "llama-programma-title.jpg",
-                "slug": "6"
+                "slug": "6",
+                "component": "CaseStudy6"
             }
          
         ],
