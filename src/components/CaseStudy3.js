@@ -17,7 +17,7 @@ import poster from '../assets/poster.jpg';
 
 
 
-let CaseStudy = ({ item }) => {
+let CaseStudy3 = ({ item }) => {
     console.log(item);
     return (
         <Container vert>
@@ -106,7 +106,7 @@ let CaseStudy = ({ item }) => {
     );
 }
 
-export default withRouteData(CaseStudy);
+export default withRouteData(CaseStudy3);
 
 
 

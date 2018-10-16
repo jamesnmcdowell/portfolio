@@ -12,7 +12,7 @@ import llamaScreen from '../assets/llama-screenshot.jpg';
 import llamaLogo from '../assets/llama.png';
 
 
-let CaseStudy = ({ item }) => {
+let CaseStudy6 = ({ item }) => {
     console.log(item);
     return (
         <Container vert>
@@ -40,7 +40,7 @@ let CaseStudy = ({ item }) => {
     );
 }
 
-export default withRouteData(CaseStudy);
+export default withRouteData(CaseStudy6);
 
 
 

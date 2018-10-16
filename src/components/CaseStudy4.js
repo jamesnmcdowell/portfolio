@@ -17,7 +17,7 @@ import farmfreshNarrow from '../assets/farmfresh-title.jpg';
 import farmfreshWireframe from '../assets/farmfresh-wireframe2.jpg';
 
 
-let CaseStudy = ({ item }) => {
+let CaseStudy4 = ({ item }) => {
     console.log(item);
     return (
         <Container vert>
@@ -81,7 +81,7 @@ let CaseStudy = ({ item }) => {
     );
 }
 
-export default withRouteData(CaseStudy);
+export default withRouteData(CaseStudy4);
 
 
 

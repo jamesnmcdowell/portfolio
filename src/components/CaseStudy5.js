@@ -10,7 +10,7 @@ import foodstashSquare from '../assets/foodstash-title-square.png';
 import foodstashWide from '../assets/foodstash-title2.png';
 import foodstashWireframe from '../assets/foodstash-wireframe.JPG';
 
-let CaseStudy = ({ item }) => {
+let CaseStudy5 = ({ item }) => {
     console.log(item);
     return (
         <Container vert>
@@ -81,7 +81,7 @@ let CaseStudy = ({ item }) => {
     );
 }
 
-export default withRouteData(CaseStudy);
+export default withRouteData(CaseStudy5);
 
 
 
