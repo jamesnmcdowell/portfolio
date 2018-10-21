@@ -4,7 +4,8 @@ const sizes = {
     giant: 1150,
     desktop: 950,
     tablet: 750,
-    phone: 200
+    bigPhone:500,
+    phone: 350
 }
 
 
@@ -20,19 +21,18 @@ export const media = Object.keys(sizes).reduce((accumulator, label) => {
 }, {});
 
 
-// export const Container = styled.div`
-//     ${media.phone`padding: 0 10px;`}
-//     ${media.tablet`padding: 0 20px;`}
-//     ${media.desktop`padding: 0 30px;`}
-//     ${media.giant`max-width: 1000px; margin: 0 auto;`}
-// `;
-export const Container = styled.div`
-    ${media.phone`padding: ${props => props.vert ? '40px 10px' : '0 10px'};`}
-    ${media.tablet`padding: ${props => props.vert ? '60px 20px' : '0 20px'};`}
-    ${media.desktop`padding: ${props => props.vert ? '80px 30px' : '0 30px'};`}
+export const Container2 = styled.div`
+    ${media.phone`padding: ${props => props.vert ? '0 10px 140px 10px' : '140px 10px 0 10px'};`}
+    ${media.tablet`padding: ${props => props.vert ? '0 20px 160px 10px' : '160px 20px 0 10px'};`}
+    ${media.desktop`padding: ${props => props.vert ? '0 30px 180px 30px' : '180px 30px 0 30px'};`}
     ${media.giant`max-width: 1000px; margin: 0 auto;`} 
 `;
-
+export const Container = styled.div`
+    ${media.phone`padding: ${props => props.vert ? '140px 10px' : '0 10px'};`}
+    ${media.tablet`padding: ${props => props.vert ? '160px 20px' : '0 20px'};`}
+    ${media.desktop`padding: ${props => props.vert ? '180px 30px' : '0 30px'};`}
+    ${media.giant`max-width: 1000px; margin: 0 auto;`} 
+`;
 
 
 export const responsiveFontSize = ({ minFont, maxFont, minScreen = 320, maxScreen = 1200, units = "px" }) => {

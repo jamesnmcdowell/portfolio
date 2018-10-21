@@ -6,8 +6,6 @@ import styled from 'styled-components';
 import { media, Container, ContainerV } from './Media';
 import { withRouteData } from 'react-static';
 
-
-
 import llamaScreen from '../assets/llama-screenshot.jpg';
 import llamaLogo from '../assets/llama.png';
 
@@ -56,9 +54,12 @@ let BTitle = styled.p`
 let Button = styled.a`
     font-size: 16px;
     font-weight: 600;
-    background-color: #1B67AB;
-    color: white;
+    border: 5px solid #1B67AB;
     padding: 1rem;
+    &:hover {
+        background-color: #1B67AB;
+        color: white;
+    }
 `;
 
 let Img = styled.img`

@@ -20,7 +20,7 @@ injectGlobal`
     font-size: 16px;
     margin: 0;
     padding: 0;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #222;
     line-height: 1.5;
     letter-spacing: .1rem;
@@ -44,28 +44,17 @@ injectGlobal`
   button {
     font-family: 'Work Sans', sans-serif;
   }
-  @font-face {
-    font-family: 'Source Sans Pro';
-    src: url('./assets/fonts/BauhausStd-Light.otf') format('otf'),
-      url('./assets/fonts/BauhausStd-Medium.otf') format('otf'),
-      url('./assets/fonts/BauhausStd-Demi.otf') format('otf');
-  }
+
   body {
-    font-family: BauhausStd-Medium;
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
   }
   h2 {
-    font-family: BauhausStd-Demi;
     font-family: 'Nunito', sans-serif;
-  }
-  .fonts-loaded body {
-    font-family: Source Sans Pro, sans-serif;
   }
 
   ul {
       padding-left: 20px;
-
   }
 
   ${normalize()}
@@ -75,6 +64,9 @@ const App = () => (
     <Router>
         <Route path="/:page?" render={(props) => (
           <AppContent {...props} />
+      // <Shell {...this.props}>
+      //   <Routes />
+      // </Shell>
         )}/> 
     </Router>
 );

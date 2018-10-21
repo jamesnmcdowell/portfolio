@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 
 let PortfolioItem = ({ item }) =>
-    <Link className="product-card-link" to={`/portfolio/${item.slug}`} >
+    <Link className="product-card-link" to={`/work/${item.slug}`} >
         <Card>
             <Img src={require(`../assets/${item.image}`)} />
             <Info>

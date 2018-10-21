@@ -23,13 +23,13 @@ export default {
         component: 'src/components/PortfolioScreen',
       },
       {
-        path: '/portfolio',
+        path: '/work',
         component: 'src/components/PortfolioScreen',
         getData: () => ({
           items,
         }),
         children: items.map(item => {
-          console.log(item); 
+          // console.log(item); 
           return ({
           path: `/${item.slug}`,
           component: `src/components/${item.component}`,
@@ -44,7 +44,7 @@ export default {
       },
       {
         path: '/resume',
-        component: 'src/components/PortfolioScreen',
+        component: 'src/components/ResumeScreen',
       },
       {
         path: '404',

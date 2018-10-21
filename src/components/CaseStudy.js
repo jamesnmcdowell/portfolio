@@ -12,7 +12,7 @@ import wireframes1 from '../assets/wireframes2.png';
 import mobile1 from '../assets/mobile1-HH.png';
 import boardDesign from '../assets/board-design-HH.jpg';
 import boardgame from '../assets/HomeHelper.jpg';
-import storyBoardHH from '../assets/storyboard3-HH.png';
+import storyBoardHH from '../assets/storyboard3-HH.jpg';
 import storyBoardBG2 from '../assets/storyboard2-BG.png';
 import storyBoardBG1 from '../assets/storyboard1-BG.png';
 

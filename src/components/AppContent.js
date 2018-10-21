@@ -18,14 +18,13 @@ class AppContent extends Component {
     }
     
     componentDidUpdate (prevProps) {
-        console.log('bitch please')
         if (this.props.match.params.page && this.props.location !== prevProps.location) {
             document.querySelector(".scroll-grabber").scrollTop = 0;
         }
     }
 
     exitSplash () {
-        if (this.state.canExitSplash) this.props.history.replace('/portfolio');
+        if (this.state.canExitSplash) this.props.history.replace('/work');
         this.setState({
             canExitSplash: false
         });

@@ -7,7 +7,6 @@ import { media, Container, ContainerV } from './Media';
 import { withRouteData } from 'react-static';
 
 import foodstashSquare from '../assets/foodstash-title-square.png';
-import foodstashWide from '../assets/foodstash-title2.png';
 import foodstashWireframe from '../assets/foodstash-wireframe.JPG';
 
 let CaseStudy5 = ({ item }) => {

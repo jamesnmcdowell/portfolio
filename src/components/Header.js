@@ -1,22 +1,22 @@
 import React from 'react';
 import { Link } from 'react-static';
-import HamburgerMenu from './HamburgerMenu';
+// import HamburgerMenu from './HamburgerMenu';
 import { media, Container } from './Media';
 import styled from 'styled-components';
-import Headroom from 'react-headroom';
+// import Headroom from 'react-headroom';
 
 let Header = ({ headerActive, toggleMenu, MenuOpen, match }) =>
     // <Headroom style={{ zIndex: 8 }}>
     <NavBar>
         <FlexNav> 
             <LogoContainer onClick={() => {  }}>
-                <Link to="/portfolio">
+                <Link to="/work">
                     <Logo> JAMES MCDOWELL  </Logo>
                 </Link>
             </LogoContainer>
             <MenuLinks>
-                <NavLink to="/portfolio"  {...(match.params.page === 'portfolio')? {active: "true"} : {}} >
-                    <span> PORTFOLIO</span>
+                <NavLink to="/work"  {...(match.params.page === 'work')? {active: "true"} : {}} >
+                    <span> WORK </span>
                 </NavLink>
                 <NavLink to="/about" {...(match.params.page === 'about') ? { active: "true" } : {}}>
                     <span> ABOUT</span>
@@ -42,6 +42,9 @@ let FlexNav = styled.div`
     height: 100%;
     padding: 0 10px;
     background-color: white;
+    ${media.tablet`
+    padding: 0 20px; 
+    `}
 `;
 
 let LogoContainer = styled.div`
@@ -58,38 +61,59 @@ let LogoContainer = styled.div`
 let MenuLinks = styled.div`
     display: none;
     color: #ffffff;
-    ${media.desktop`
     display: block;
     flex: 1 1 auto;
     justify-content: flex-end;
     display: flex;
     align-items: center;
     
-    `}
+    
 `;
 
 let NavLink = styled(Link) `
     color: black;
     flex: 0 0 auto;
     height: 100%;    
-    padding: 10px 12px 0 12px;;
+    padding: 20px 0 0 0px;;
     display: flex;
     align-items: center;
-    border-bottom: 8px solid transparent;
-    &:hover{
+    border-bottom: 20px solid transparent;
+    font-size:1.1rem;
+    margin-right: 8px;
+    ${media.phone`
+    font-size:1.4rem;
+    `}
+    ${media.bigPhone`
+    font-size:1.7rem;
+    margin-right: 15px;
+    `}
+     ${media.tablet`
+        font-size:1.7rem;
+        margin-right: 25px;
+    `}
+    &:last-child {
+        margin-right: 0;
     }
-    box-shadow: ${props => props.active ? "inset 0px -8px 0px 0px #C21717" : "8px solid transparent" } 
+    span{
+    }
+    box-shadow: ${props => props.active ? "inset 0px -7px 0px 0px #C21717" : "7px solid transparent" }
     `;
 
-let Logo = styled.h2 `
+let Logo = styled.h1 `
+    font-size:1.2rem;
     width: auto;
     text-decoration: none;
     &:hover{
         opacity: .7;
     }
     &:active{
-        
     }
+    ${media.phone`
+    font-size:1.6rem;
+    `}
+    ${media.bigPhone`
+    font-size:2rem;
+    `}
 `;
     // font-family: 'BauhausStd-Medium', cursive;
 //  
