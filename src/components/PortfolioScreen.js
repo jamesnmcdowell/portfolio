@@ -32,7 +32,6 @@ let Outer = styled.div`
     display: grid;
     font-size: 2rem;
 
-    
     display: grid;            
     &::before {
         grid-area: 1 / 1 / 2 / 2;
