@@ -17,7 +17,7 @@ import poster from '../assets/poster.jpg';
 
 
 
-let CaseStudy = ({ item }) => {
+let CaseStudy3 = ({ item }) => {
     console.log(item);
     return (
         <Container vert>
@@ -27,10 +27,10 @@ let CaseStudy = ({ item }) => {
                 <GridBox>
                     <div>
                         <SubTitle>Problem/Motivation</SubTitle>
-                        <p>Dengue Fever is a major global public health concern — 40% of the world’s population is at risk for developing Dengue Fever (CDC 2014) and it is  estimated that there are 390 million new cases each year. Additionally, major widespread outbreaks are on the rise and are overwhelming medical and relief services. Thus, forecasting new outbreaks is a critical need for public health officials combating Dengue.</p>
-                        <p>Because Dengue is transmitted by mosquitoes, there is a known relationship between climate and outbreaks . But how exactly and to what degree these different variables contribute to outbreaks is not as well known. The goal of this project is to build interactive visualizations to help understand the relationship between complex climate related variables and outbreaks in order to support the task of forecasting future outbreaks. </p>
+                        <P>Dengue Fever is a major global public health concern — 40% of the world’s population is at risk for developing Dengue Fever (CDC 2014) and it is  estimated that there are 390 million new cases each year. Additionally, major widespread outbreaks are on the rise and are overwhelming medical and relief services. Thus, forecasting new outbreaks is a critical need for public health officials combating Dengue.</P>
+                        <P>Because Dengue is transmitted by mosquitoes, there is a known relationship between climate and outbreaks . But how exactly and to what degree these different variables contribute to outbreaks is not as well known. The goal of this project is to build interactive visualizations to help understand the relationship between complex climate related variables and outbreaks in order to support the task of forecasting future outbreaks. </P>
                         <SubTitle>Users</SubTitle>
-                        <p>The users of our interactive visualization would be policy makers, medical staff, relief workers, and researchers. Policy makers and relief workers would be interested in knowing if Dengue cases are on the rise so as to allocate more funding for efforts to combat infections. Researchers and medical staff are interested in better understanding how climate influences outbreaks in order to predict future incidents. Additionally, these individuals would be interested in understanding if there are regular temporal patterns in the outbreaks.</p>
+                        <P>The users of our interactive visualization would be policy makers, medical staff, relief workers, and researchers. Policy makers and relief workers would be interested in knowing if Dengue cases are on the rise so as to allocate more funding for efforts to combat infections. Researchers and medical staff are interested in better understanding how climate influences outbreaks in order to predict future incidents. Additionally, these individuals would be interested in understanding if there are regular temporal patterns in the outbreaks.</P>
                     </div>
                     <VertCenter>
                         <Img src={poster} />
@@ -53,18 +53,18 @@ let CaseStudy = ({ item }) => {
                 <SecTitle>Research {"&"} Results</SecTitle>
 
                 <SubTitle>Exploratory Research</SubTitle>
-                <p>We read through an extensive amount of literature related to dengue fever including  biological characteristics of the virus, mathematical models of its transmission in various countries, temporal and geographic transmission trends, and previous prevention efforts. In addition, I was able to conduct an interview with a CDC expert to gain an expert opinion on what insights the interactive data visualization should provide.</p>
+                <P>We read through an extensive amount of literature related to dengue fever including  biological characteristics of the virus, mathematical models of its transmission in various countries, temporal and geographic transmission trends, and previous prevention efforts. In addition, I was able to conduct an interview with a CDC expert to gain an expert opinion on what insights the interactive data visualization should provide.</P>
 
                 <SubTitle>Research Insights</SubTitle>
-                <p>There are factors unrelated to climate that influence the transmission of dengue. These are human created factors and behaviors, such as rain-water collection, which serves as a breeding ground for mosquitos, or housing conditions, which can allow greater exposure to mosquitos.</p>
+                <P>There are factors unrelated to climate that influence the transmission of dengue. These are human created factors and behaviors, such as rain-water collection, which serves as a breeding ground for mosquitos, or housing conditions, which can allow greater exposure to mosquitos.</P>
 
                 <SecTitle>Design Process</SecTitle>
                 
                 <SubTitle>Brainstorming:</SubTitle>
                 <GridBox>
                     <div>
-                        <p>We met as a team for an ideation session where we individually came up with as many design ideas as possible that would address our goal in displaying the data. We went around the table and each of us presented our design concepts to each other. After going through all of our ideas, we discussed strengths and weaknesses of the designs and were able to merge some of our smaller design concepts into unified, more compelling ones. </p>
-                        <p>Eventually we narrowed down our ideas into four distinct designs. We presented these ideas to other graduate students and faculty to get early feedback and help guide us in our choice of a design idea. </p>
+                        <P>We met as a team for an ideation session where we individually came up with as many design ideas as possible that would address our goal in displaying the data. We went around the table and each of us presented our design concepts to each other. After going through all of our ideas, we discussed strengths and weaknesses of the designs and were able to merge some of our smaller design concepts into unified, more compelling ones. </P>
+                        <P>Eventually we narrowed down our ideas into four distinct designs. We presented these ideas to other graduate students and faculty to get early feedback and help guide us in our choice of a design idea. </P>
                     </div>
                     <VertCenter>
                         <Img src={datavisBrainstorming} />
@@ -97,7 +97,7 @@ let CaseStudy = ({ item }) => {
                 </GridBox>  
 
                 <SecTitle>Next Steps</SecTitle>
-                <p>We are currently working on bringing our final design to life using D3.js, a JavaScript framework for developing rich, interactive data-visualizations.</p>
+                <P>We are currently working on bringing our final design to life using D3.js, a JavaScript framework for developing rich, interactive data-visualizations.</P>
 
 
 
@@ -106,7 +106,7 @@ let CaseStudy = ({ item }) => {
     );
 }
 
-export default withRouteData(CaseStudy);
+export default withRouteData(CaseStudy3);
 
 
 
@@ -120,7 +120,9 @@ let BTitle = styled.p`
     font-weight: 600;
     text-align:center;
 `;
-
+let P = styled.p`
+    font-size: 1.7rem;
+`;
 
 let Img = styled.img`
     width: 100%;

@@ -7,10 +7,9 @@ import { media, Container, ContainerV } from './Media';
 import { withRouteData } from 'react-static';
 
 import foodstashSquare from '../assets/foodstash-title-square.png';
-import foodstashWide from '../assets/foodstash-title2.png';
 import foodstashWireframe from '../assets/foodstash-wireframe.JPG';
 
-let CaseStudy = ({ item }) => {
+let CaseStudy5 = ({ item }) => {
     console.log(item);
     return (
         <Container vert>
@@ -81,7 +80,7 @@ let CaseStudy = ({ item }) => {
     );
 }
 
-export default withRouteData(CaseStudy);
+export default withRouteData(CaseStudy5);
 
 
 
@@ -94,7 +93,9 @@ let BTitle = styled.p`
     font-size: 18px;
     font-weight: 600;
 `;
-
+let P = styled.p`
+    font-size: 1.7rem;
+`;
 
 let Img = styled.img`
     width: 100%;

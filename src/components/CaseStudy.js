@@ -12,23 +12,14 @@ import wireframes1 from '../assets/wireframes2.png';
 import mobile1 from '../assets/mobile1-HH.png';
 import boardDesign from '../assets/board-design-HH.jpg';
 import boardgame from '../assets/HomeHelper.jpg';
-import storyBoardHH from '../assets/storyboard3-HH.png';
+import storyBoardHH from '../assets/storyboard3-HH.jpg';
 import storyBoardBG2 from '../assets/storyboard2-BG.png';
 import storyBoardBG1 from '../assets/storyboard1-BG.png';
 
-import { scrollTo } from 'react-static'
 
-const asyncScrollToHeight = async () => {
-    await scrollTo(0, {
-        offset: 0,
-        duration: 1
-    })
-    console.log('Done scrolling!')
-}
 
 let CaseStudy = ({item}) => {
 console.log(item);
-    asyncScrollToHeight();
     return (
     <Container vert>
         <GridContainer>
@@ -38,10 +29,10 @@ console.log(item);
                 <GridBox>
                     <div>
                         <SubTitle>Problem/Motivation</SubTitle>
-                        <p>To enable stay-at-home parents to manage their time effectively so that they have more time for themselves.</p>
+                        <P>To enable stay-at-home parents to manage their time effectively so that they have more time for themselves.</P>
 
                         <SubTitle>Users</SubTitle>
-                        <p>The target user group is stay-at-home parents (SAHP) in the United States who have minor children living at home with them.</p> 
+                        <P>The target user group is stay-at-home parents (SAHP) in the United States who have minor children living at home with them.</P> 
                         <SubTitle>Logistics</SubTitle>
                         <ul>
                             <li><strong>Duration:</strong> August 2018 - Present</li>
@@ -57,10 +48,10 @@ console.log(item);
                 <SecTitle>Research {"&"} Results</SecTitle>
 
                 <SubTitle>Exploratory Research</SubTitle>  
-                <p>To get a better understanding of our user group, we initially reviewed  a variety of online sources. We read through a variety of blogs and websites where stay-at-home parents commonly expressed need for alone time for personal hobbies. In addition, we read through many forums such as reddit and quora that discussed challenges faced by both stay-at-home moms/dads.</p>
+                <P>To get a better understanding of our user group, we initially reviewed  a variety of online sources. We read through a variety of blogs and websites where stay-at-home parents commonly expressed need for alone time for personal hobbies. In addition, we read through many forums such as reddit and quora that discussed challenges faced by both stay-at-home moms/dads.</P>
 
                 <SubTitle>Interviews</SubTitle> 
-                <p>After gaining a solid understanding of the user group through informal online research, we came up with a set of semi-structured interview questions which helped us to identify patterns and trends among stay-at-home parents and the challenges that they face. The development of the interview questions was an iterative process in which we initially ran a pilot interview to evaluate the estimated time and quality of the questions. Apart from the pilot study, we interviewed 10 stay-at-home parents,  which included 7 stay-at-home moms and 3 stay-at-home dads. The focus of our interviews was to learn about the following aspects of their lives: </p> 
+                <P>After gaining a solid understanding of the user group through informal online research, we came up with a set of semi-structured interview questions which helped us to identify patterns and trends among stay-at-home parents and the challenges that they face. The development of the interview questions was an iterative process in which we initially ran a pilot interview to evaluate the estimated time and quality of the questions. Apart from the pilot study, we interviewed 10 stay-at-home parents,  which included 7 stay-at-home moms and 3 stay-at-home dads. The focus of our interviews was to learn about the following aspects of their lives: </P> 
                 <ol>
                     <li>Shopping/purchasing practices</li>
                     <li>Social lives and related expectations</li> 
@@ -71,7 +62,7 @@ console.log(item);
                 <GridBox>
                     <div>
                         <SubTitle>Affinity Diagram</SubTitle>
-                        <p>In order to make sense of the significant amount of qualitative data that we collected through interviews, we choose to create an affinity map. We converted our data from all 10 participants into 150 data points on individual sticky notes and mapped them into 43 groups based on specific user tasks and goals. We then arranged these 43 groups into 5 distinct, overarching categories:</p>
+                        <P>In order to make sense of the significant amount of qualitative data that we collected through interviews, we choose to create an affinity map. We converted our data from all 10 participants into 150 data points on individual sticky notes and mapped them into 43 groups based on specific user tasks and goals. We then arranged these 43 groups into 5 distinct, overarching categories:</P>
                     </div>
                     <VertCenter>
                         <Img src={affinityWall1} />
@@ -79,7 +70,7 @@ console.log(item);
                 </GridBox>  
                 
                 <SubTitle>Research Insights</SubTitle>
-                <p>Through our affinity diagram, we identified a number of user goals for stay-at-home parents:</p>
+                <P>Through our affinity diagram, we identified a number of user goals for stay-at-home parents:</P>
                 <ol>
                     <li>I want to shop efficiently and conveniently</li>
                     <li>I want to spend more time with my family</li> 
@@ -88,13 +79,13 @@ console.log(item);
                     <li>I want to keep track of my life</li>
                 </ol>
 
-                <p>Many stay-at-home parents reported the difficulty of keeping up with these tasks especially because often they are simultaneously supervising their children. This frequently resulted in little to no personal time for stay-at-home parents whether that be for pursuing hobbies, workouts, walks, or simply relaxing.  Our research led us to define what problem should be addressed in our design. We came up with the following goal: enabling stay-at-home parents to manage their time effectively so that they have more time for themselves.</p> 
+                <P>Many stay-at-home parents reported the difficulty of keeping up with these tasks especially because often they are simultaneously supervising their children. This frequently resulted in little to no personal time for stay-at-home parents whether that be for pursuing hobbies, workouts, walks, or simply relaxing.  Our research led us to define what problem should be addressed in our design. We came up with the following goal: enabling stay-at-home parents to manage their time effectively so that they have more time for themselves.</P> 
 
                 <SecTitle>Design Process</SecTitle>
                 <GridBox>
                     <div>
                         <SubTitle> Brainstorming</SubTitle>
-                        <p>We walked the affinity mapping wall as a team and came up with 33 design ideas. We then went through multiple brainstorming sessions to clarify and sort through our design ideas. We then choose 3 ideas to explore in greater depth. We chose design ideas that both clearly met the objectives of our goal, yet were distinctive and unique from a design perspective.</p>
+                        <P>We walked the affinity mapping wall as a team and came up with 33 design ideas. We then went through multiple brainstorming sessions to clarify and sort through our design ideas. We then choose 3 ideas to explore in greater depth. We chose design ideas that both clearly met the objectives of our goal, yet were distinctive and unique from a design perspective.</P>
                     </div>
                     <VertCenter>
                         <Img src={affinityWall2} />
@@ -108,8 +99,8 @@ console.log(item);
                         <Img src={mainImage} />
                     </VertCenter>
                     <div>
-                        <p>The SmartScheduler is a touchscreen interface that is mounted to the wall taking the place of a traditional wall calendar with additional features pertinent to stay-at-home parents. Because of its integration into the home,  stay-at-home parents are able to view and interact with the interface naturally as they go about their daily tasks at home.</p>
-                        <p>What really sets the smart scheduler apart from other systems is its emphasis on self-care. Through our research we discovered that stay-at-home parents severely lack time for relaxation or hobbies and that they are not able to fulfill these needs due to their hectic schedules and the effort it takes to find events or activity groups. The smart scheduler allows stay-at-home parents to be cognizant of the amount time they are actually spending on themselves and encourages them to set and maintain goals for their personal health. It also provides suggestions for local events related to parents’ interests so that they don’t have to spend their own time searching.</p> 
+                        <P>The SmartScheduler is a touchscreen interface that is mounted to the wall taking the place of a traditional wall calendar with additional features pertinent to stay-at-home parents. Because of its integration into the home,  stay-at-home parents are able to view and interact with the interface naturally as they go about their daily tasks at home.</P>
+                        <P>What really sets the smart scheduler apart from other systems is its emphasis on self-care. Through our research we discovered that stay-at-home parents severely lack time for relaxation or hobbies and that they are not able to fulfill these needs due to their hectic schedules and the effort it takes to find events or activity groups. The smart scheduler allows stay-at-home parents to be cognizant of the amount time they are actually spending on themselves and encourages them to set and maintain goals for their personal health. It also provides suggestions for local events related to parents’ interests so that they don’t have to spend their own time searching.</P> 
                     </div>
                 </GridBox>
 
@@ -149,8 +140,8 @@ console.log(item);
                 
                 <GridBox>
                     <div>
-                        <p>In our interviews, many stay-at-home parents mentioned the challenge of finding activities for their kids. The idea behind this application is that if a stay-at-home parent could spend less time searching and planning activities for their children, they could have more time for themselves. Additionally, the ability to quickly identify locations that are appropriate for children would reduce the cognitive load and stress that takes place when a parent is taking their kids to a new place or going through a new, potentially stressful experience with them.</p>
-                        <p>Kindly is a mobile application that enables people to find kid-friendly locations based on user ratings. Users can also post the location of any particularly kid-friendly places to share with others. Kindly also enables parents to share information relating to kid-friendly businesses, such as airlines, in order to help other parents plan outings.  Although other user-review apps for finding places exist, we identified that no other applications offered a child-focused reviewing system and considered this to be a significant enough task to warrant a separate application.</p>
+                        <P>In our interviews, many stay-at-home parents mentioned the challenge of finding activities for their kids. The idea behind this application is that if a stay-at-home parent could spend less time searching and planning activities for their children, they could have more time for themselves. Additionally, the ability to quickly identify locations that are appropriate for children would reduce the cognitive load and stress that takes place when a parent is taking their kids to a new place or going through a new, potentially stressful experience with them.</P>
+                        <P>Kindly is a mobile application that enables people to find kid-friendly locations based on user ratings. Users can also post the location of any particularly kid-friendly places to share with others. Kindly also enables parents to share information relating to kid-friendly businesses, such as airlines, in order to help other parents plan outings.  Although other user-review apps for finding places exist, we identified that no other applications offered a child-focused reviewing system and considered this to be a significant enough task to warrant a separate application.</P>
                     </div>
                     <VertCenter>
                         <Img src={wireframes1} />
@@ -181,14 +172,14 @@ console.log(item);
                         <Img src={boardgame} />
                     </VertCenter>
                     <div>
-                        <p>From early on, we had a concept of a physical, non-digital scheduler in mind. It was difficult to achieve the purpose of our user’s goal within the context of a physical calendar — our ideas simply felt either overly complex/crowded or too conventional.</p>
-                        <p>At this point we began to think in new directions and instead diverged away from scheduling ideas. Given the limited physical space we had to work with, we decided that it would be more appropriate to solve the users' goal in a more general, holistic way. We brainstormed collaborative systems that can distribute the workload across all family members and decided that we need to ensure that our design motivates family members to take a more active role in completing chores.</p>
-                        <p>This is where we came up with the idea to make a board game. We saw this as an opportunity to motivate the family and leverage a natural sense of competition in order to reduce the workload of a stay-at-home parent. Unlike conventional board games, we envisioned this game to be continuously played in the background of the family’s everyday life.</p> 
+                        <P>From early on, we had a concept of a physical, non-digital scheduler in mind. It was difficult to achieve the purpose of our user’s goal within the context of a physical calendar — our ideas simply felt either overly complex/crowded or too conventional.</P>
+                        <P>At this point we began to think in new directions and instead diverged away from scheduling ideas. Given the limited physical space we had to work with, we decided that it would be more appropriate to solve the users' goal in a more general, holistic way. We brainstormed collaborative systems that can distribute the workload across all family members and decided that we need to ensure that our design motivates family members to take a more active role in completing chores.</P>
+                        <P>This is where we came up with the idea to make a board game. We saw this as an opportunity to motivate the family and leverage a natural sense of competition in order to reduce the workload of a stay-at-home parent. Unlike conventional board games, we envisioned this game to be continuously played in the background of the family’s everyday life.</P> 
                     </div>
                 </GridBox>
 
                 <BTitle>The core concept of the game is as follows:</BTitle> 
-                <p>A  player completes a household chore. Every chore is assigned a particular point value. The player moves ahead as many points as the task is worth after completing a task. The player that reaches the finish line first wins and is able to win a prize that is determined by the stay-at-home-parent. The game can then be immediately reset and played from the beginning. In order to counter short attention spans of children and maintain motivation, there are many chance (star) spaces along the way that can lead to small prizes and interesting twists and turns within the game.</p>
+                <P>A  player completes a household chore. Every chore is assigned a particular point value. The player moves ahead as many points as the task is worth after completing a task. The player that reaches the finish line first wins and is able to win a prize that is determined by the stay-at-home-parent. The game can then be immediately reset and played from the beginning. In order to counter short attention spans of children and maintain motivation, there are many chance (star) spaces along the way that can lead to small prizes and interesting twists and turns within the game.</P>
 
                 
                 <GridBox>
@@ -220,7 +211,7 @@ console.log(item);
                 </GridBox>
 
                 <SecTitle>Next Steps</SecTitle>
-                <p>We will choose one of three design ideas and create a detailed interactive prototype of the interface.  Based on research and processes of designing the system, we will then come up with criteria by which our interface can be evaluated in order to eventually perform a formal evaluation.</p>
+                <P>We will choose one of three design ideas and create a detailed interactive prototype of the interface.  Based on research and processes of designing the system, we will then come up with criteria by which our interface can be evaluated in order to eventually perform a formal evaluation.</P>
 
         </GridContainer>
     </Container>
@@ -240,7 +231,9 @@ let BTitle = styled.p`
     font-size: 18px;
     font-weight: 600;
 `;
-
+let P = styled.p`
+    font-size: 1.7rem;
+`;
 
 let Img = styled.img`
     width: 100%;

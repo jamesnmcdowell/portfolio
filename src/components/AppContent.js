@@ -8,16 +8,23 @@ import Shell from './Shell'
 import splashImage from '../assets/splash-mobile3.svg';
 import { media } from './Media';
 
+
 class AppContent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            canExitSplash: true
+            canExitSplash: !props.match.params.page 
         };
     }
     
+    componentDidUpdate (prevProps) {
+        if (this.props.match.params.page && this.props.location !== prevProps.location) {
+            document.querySelector(".scroll-grabber").scrollTop = 0;
+        }
+    }
+
     exitSplash () {
-        if (this.state.canExitSplash) this.props.history.replace('/portfolio');
+        if (this.state.canExitSplash) this.props.history.replace('/work');
         this.setState({
             canExitSplash: false
         });
@@ -33,7 +40,7 @@ class AppContent extends Component {
                     <Splash  {...{ expand: !match.params.page }}>
                         <img src={splashImage}   />
                     </Splash>
-                    <SiteContent {...{ expand: !!match.params.page }}>
+                    <SiteContent className="scroll-grabber" {...{ expand: !!match.params.page }}>
                         <Shell {...this.props}>
                             <Routes />
                         </Shell>

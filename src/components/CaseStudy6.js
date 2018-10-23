@@ -6,13 +6,11 @@ import styled from 'styled-components';
 import { media, Container, ContainerV } from './Media';
 import { withRouteData } from 'react-static';
 
-
-
 import llamaScreen from '../assets/llama-screenshot.jpg';
 import llamaLogo from '../assets/llama.png';
 
 
-let CaseStudy = ({ item }) => {
+let CaseStudy6 = ({ item }) => {
     console.log(item);
     return (
         <Container vert>
@@ -21,7 +19,7 @@ let CaseStudy = ({ item }) => {
                 <SecTitle>Overview </SecTitle>
                 <GridBox>
                     <div>
-                        <p>This is a simple ecommerce website that is built with React and Redux. It is dedicated to the beauty and awesomeness of Llamas. Feel free to browse through an awesome assortment of Llama paraphernalia. Add whatever you want to your cart and watch your bill rise.</p>
+                        <P>This is a simple ecommerce website that is built with React and Redux. It is dedicated to the beauty and awesomeness of Llamas. Feel free to browse through an awesome assortment of Llama paraphernalia. Add whatever you want to your cart and watch your bill rise.</P>
                         <br/>
                         <Button target="_blank" href="https://inspiring-poincare-dab459.netlify.com/">
                             <span>View Site</span>
@@ -40,7 +38,7 @@ let CaseStudy = ({ item }) => {
     );
 }
 
-export default withRouteData(CaseStudy);
+export default withRouteData(CaseStudy6);
 
 
 
@@ -53,12 +51,19 @@ let BTitle = styled.p`
     font-size: 18px;
     font-weight: 600;
 `;
+let P = styled.p`
+    font-size: 1.7rem;
+`;
 let Button = styled.a`
     font-size: 16px;
     font-weight: 600;
-    background-color: #1B67AB;
-    color: white;
+    border: 5px solid #1B67AB;
     padding: 1rem;
+    text-transform:uppercase;
+    &:hover {
+        background-color: #1B67AB;
+        color: white;
+    }
 `;
 
 let Img = styled.img`
