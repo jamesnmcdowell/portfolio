@@ -93,7 +93,9 @@ let BTitle = styled.p`
     font-size: 18px;
     font-weight: 600;
 `;
-
+let P = styled.p`
+    font-size: 1.7rem;
+`;
 
 let Img = styled.img`
     width: 100%;

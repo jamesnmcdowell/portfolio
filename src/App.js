@@ -31,8 +31,9 @@ injectGlobal`
     height: 100%;
     overflow: hidden;
   }
-  p, span {
+  p, span, li {
     letter-spacing: .02rem;
+    font-size: 1.7rem;
   }
   a {
     text-decoration: none !important;
@@ -53,7 +54,7 @@ injectGlobal`
     font-family: 'Nunito', sans-serif;
   }
 
-  ul {
+  ul, ol {
       padding-left: 20px;
   }
 

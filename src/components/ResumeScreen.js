@@ -13,17 +13,26 @@ import resumePDF from '../assets/JMcDowell_2018.pdf';
 
 let ResumeScreen = () =>
 <div>
-    <Container2 >
+    {/* <Container2 >
     <GridTop>
         <Button target="_blank" href={resumePDF}>
             <span>Download PDF</span>
         </Button>
     </GridTop>
-    </Container2>
+    </Container2> */}
      <GridDesign>
         <Line>
         </Line>
-       
+        <GridTop>
+            <Container2 >
+                <div>
+                    <Button target="_blank" href={resumePDF}>
+                        <span>Download PDF</span>
+                    </Button>
+                </div>
+                <br/>
+            </Container2>
+        </GridTop>
         <TopContent >
             <Container > 
                 <GridContainer>
@@ -62,21 +71,21 @@ export default ResumeScreen;
 let GridDesign = styled.div`
     display: grid;
     grid-template-columns: 20px 1fr;
-    grid-template-rows: auto 50px auto;
+    grid-template-rows: auto auto 50px auto;
     ${media.tablet`
     
     `}  
 `;
 
 let TopContent = styled.div`
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     grid-column: 2 / 3;
     ${media.tablet`
     margin-left: 4rem;
     `}  
 `;
 let BottomContent = styled.div`
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     grid-column: 2 / 3;
     ${media.tablet`
     margin-left: 4rem;
@@ -86,7 +95,7 @@ let BottomContent = styled.div`
 let Line = styled.div`
     background-color: #1B67AB;
     padding-left: 2rem;
-    grid-row: 1 / 4;
+    grid-row: 1 / 5;
     grid-column: 1 / 2;
     ${media.tablet`
     margin-left: 4rem;
@@ -94,12 +103,12 @@ let Line = styled.div`
 `;
 let Line2 = styled.div`
     background-color: white;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     grid-column: 1 / 3;
 `;
 let Line3 = styled.div`
     background-color: #C21717;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     grid-column: 1 / 3;
     margin: 15px 0;
     height:20px;
@@ -118,6 +127,8 @@ let GridTop = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
 `;
 let Button = styled.a`
     text-align: center;
@@ -128,6 +139,9 @@ let Button = styled.a`
     &:hover {
         background-color: #1B67AB;
         color: white;
+    }
+    span {
+        text-transform: uppercase;
     }
 `;
 

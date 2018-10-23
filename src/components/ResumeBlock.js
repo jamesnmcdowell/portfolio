@@ -50,6 +50,7 @@ let SectionTitle = styled.h2`
     font-weight: 800;
     display: inline-block;
     color: black;
+    border-bottom: 5px solid #F1E639;
 `;
 let Name = styled.h3`
     font-weight: 600;
