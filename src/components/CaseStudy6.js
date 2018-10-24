@@ -11,7 +11,6 @@ import llamaLogo from '../assets/llama.png';
 
 
 let CaseStudy6 = ({ item }) => {
-    console.log(item);
     return (
         <Container vert>
             <GridContainer>
@@ -29,10 +28,6 @@ let CaseStudy6 = ({ item }) => {
                         <Img src={llamaScreen} />
                     </VertCenter>
                 </GridBox>
-
-             
-
-
             </GridContainer>
         </Container>
     );
@@ -54,17 +49,6 @@ let BTitle = styled.p`
 let P = styled.p`
     font-size: 1.7rem;
 `;
-let Button = styled.a`
-    font-size: 16px;
-    font-weight: 600;
-    border: 5px solid #1B67AB;
-    padding: 1rem;
-    text-transform:uppercase;
-    &:hover {
-        background-color: #1B67AB;
-        color: white;
-    }
-`;
 
 let Img = styled.img`
     width: 100%;
@@ -80,29 +64,59 @@ let VertCenter = styled.div`
     align-items: center;
 `;
 let MainTitle = styled.h1`
-    font-size: 60px; 
-    ${media.tablet`
-    font-size: 60px; 
-    `}  
+    font-size:3.2rem;
+    ${media.phone`
+    font-size:3.5rem;
+    `}
+    ${media.bigPhone`
+    font-size:3.7rem;
+    `}
+     ${media.tablet`
+    font-size:3.9rem;
+    `}
 `;
 let SecTitle = styled.h2`
-    font-size: 40px;
     border-bottom: 4px #C21717 solid;
+    font-size:2.5rem;
+    ${media.phone`
+    font-size:2.8rem;
+    `}
+    ${media.bigPhone`
+    font-size:3rem;
+    `}
+     ${media.tablet`
+    font-size:3.2rem;
+    `}
+    
 `;
 let SubTitle = styled.h3`
-    font-size: 25px;
     font-weight: 600;
+    font-size:2rem;
+    ${media.phone`
+    font-size:2.3rem;
+    `}
+    ${media.bigPhone`
+    font-size:2.5rem;
+    `}
+     ${media.tablet`
+    font-size:2.7rem;
+    `}
    
 `;
-let BlueLine = styled.div`
-    width: 100%;
-    height: 100%;
-    background-color: #1B67AB;
-    grid-column: 2 / 3
 
+
+
+let Button = styled.a`
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border: 5px solid #1B67AB;
+    padding: 1rem;
+    &:hover {
+        background-color: #1B67AB;
+        color: white;
+    }
+    span {
+        text-transform: uppercase;
+    }
 `;
-
-//    border: 4px #F2E818 solid;
-//     border: 4px #1B67AB  solid;
-//     border-bottom: 4px #C21717 solid;
-//     border-right: 4px #C21717 solid;

@@ -3,6 +3,7 @@ import Shell from './Shell';
 import { Link } from 'react-static';
 import styled from 'styled-components';
 // import db from '../db.json';
+import ImageZoom from 'react-medium-image-zoom';
 import { media, Container, ContainerV } from './Media';
 import { withRouteData } from 'react-static';
 import mainImage from '../assets/housetracker-title.png';
@@ -19,7 +20,6 @@ import storyBoardBG1 from '../assets/storyboard1-BG.png';
 
 
 let CaseStudy = ({item}) => {
-console.log(item);
     return (
     <Container vert>
         <GridContainer>
@@ -88,7 +88,17 @@ console.log(item);
                         <P>We walked the affinity mapping wall as a team and came up with 33 design ideas. We then went through multiple brainstorming sessions to clarify and sort through our design ideas. We then choose 3 ideas to explore in greater depth. We chose design ideas that both clearly met the objectives of our goal, yet were distinctive and unique from a design perspective.</P>
                     </div>
                     <VertCenter>
-                        <Img src={affinityWall2} />
+                        <ImageZoom
+                            image={{
+                                src: affinityWall2,
+                                alt: 'affinity mapping',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: affinityWall2,
+                                alt: 'affinity mapping'
+                            }}
+                        />
                     </VertCenter>
                 </GridBox>
 
@@ -96,7 +106,17 @@ console.log(item);
                 
                 <GridBox>
                     <VertCenter>
-                        <Img src={mainImage} />
+                        <ImageZoom
+                            image={{
+                                src: mainImage,
+                                alt: 'image of smartscheduler interface',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: mainImage,
+                                alt: 'image of smartscheduler interface'
+                            }}
+                        />
                     </VertCenter>
                     <div>
                         <P>The SmartScheduler is a touchscreen interface that is mounted to the wall taking the place of a traditional wall calendar with additional features pertinent to stay-at-home parents. Because of its integration into the home,  stay-at-home parents are able to view and interact with the interface naturally as they go about their daily tasks at home.</P>
@@ -115,7 +135,17 @@ console.log(item);
                         </ul>
                     </div>
                     <VertCenter>
-                        <Img src={storyBoardHH} />
+                        <ImageZoom
+                            image={{
+                                src: storyBoardHH,
+                                alt: 'storyboard for smartscheduler',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: storyBoardHH,
+                                alt: 'storyboard for smartscheduler'
+                            }}
+                        />
                     </VertCenter>
                 </GridBox>
 
@@ -144,7 +174,17 @@ console.log(item);
                         <P>Kindly is a mobile application that enables people to find kid-friendly locations based on user ratings. Users can also post the location of any particularly kid-friendly places to share with others. Kindly also enables parents to share information relating to kid-friendly businesses, such as airlines, in order to help other parents plan outings.  Although other user-review apps for finding places exist, we identified that no other applications offered a child-focused reviewing system and considered this to be a significant enough task to warrant a separate application.</P>
                     </div>
                     <VertCenter>
-                        <Img src={wireframes1} />
+                        <ImageZoom
+                            image={{
+                                src: wireframes1,
+                                alt: 'wireframes for mobile app',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: wireframes1,
+                                alt: 'wireframes for mobile app'
+                            }}
+                        />
                     </VertCenter>
                 </GridBox>
 
@@ -169,7 +209,17 @@ console.log(item);
 
                 <GridBox>
                     <VertCenter>
-                        <Img src={boardgame} />
+                        <ImageZoom
+                            image={{
+                                src: boardgame,
+                                alt: 'wireframes for mobile app',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: boardgame,
+                                alt: 'wireframes for mobile app'
+                            }}
+                        />
                     </VertCenter>
                     <div>
                         <P>From early on, we had a concept of a physical, non-digital scheduler in mind. It was difficult to achieve the purpose of our user’s goal within the context of a physical calendar — our ideas simply felt either overly complex/crowded or too conventional.</P>
@@ -203,10 +253,30 @@ console.log(item);
                 </GridBox>
                 <GridBox>
                     <VertCenter>
-                        <Img src={storyBoardBG1} />
+                        <ImageZoom
+                            image={{
+                                src: storyBoardBG1,
+                                alt: 'first storyboard for boardgame',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: storyBoardBG1,
+                                alt: 'first storyboard for boardgame'
+                            }}
+                        />
                     </VertCenter>
                     <VertCenter>
-                        <Img src={storyBoardBG2} />
+                        <ImageZoom
+                            image={{
+                                src: storyBoardBG2,
+                                alt: 'second storyboard for boardgame',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: storyBoardBG2,
+                                alt: 'second storyboard for boardgame'
+                            }}
+                        />
                     </VertCenter>
                 </GridBox>
 
@@ -249,26 +319,42 @@ let VertCenter = styled.div`
     align-items: center;
 `;
 let MainTitle = styled.h1`
-    font-size: 60px; 
+    font-size:3.2rem;
+    ${media.phone`
+    font-size:3.5rem;
+    `}
+    ${media.bigPhone`
+    font-size:3.7rem;
+    `}
+     ${media.tablet`
+    font-size:3.9rem;
+    `}
 `;
 let SecTitle = styled.h2`
-    font-size: 40px;
     border-bottom: 4px #C21717 solid;
+    font-size:2.5rem;
+    ${media.phone`
+    font-size:2.8rem;
+    `}
+    ${media.bigPhone`
+    font-size:3rem;
+    `}
+     ${media.tablet`
+    font-size:3.2rem;
+    `}
+    
 `;
 let SubTitle = styled.h3`
-    font-size: 25px;
     font-weight: 600;
+    font-size:2rem;
+    ${media.phone`
+    font-size:2.3rem;
+    `}
+    ${media.bigPhone`
+    font-size:2.5rem;
+    `}
+     ${media.tablet`
+    font-size:2.7rem;
+    `}
    
 `;
-let BlueLine = styled.div`
-    width: 100%;
-    height: 100%;
-    background-color: #1B67AB;
-    grid-column: 2 / 3
-
-`;
-
-//    border: 4px #F2E818 solid;
-//     border: 4px #1B67AB  solid;
-//     border-bottom: 4px #C21717 solid;
-//     border-right: 4px #C21717 solid;

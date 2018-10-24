@@ -1,3 +1,3 @@
 # Personal Portfolio 
 
-Built with React
+Built with React - inspired by Bauhaus

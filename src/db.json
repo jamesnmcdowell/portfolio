@@ -4,7 +4,7 @@
             {
                 "title": "SmartScheduler",
                 "category": ["UX Research", "UX Design" ],
-                "description":"Enabling stay-at-home parents to manage their time",
+                "description":"Enabling stay-at-home parents to manage their time so that they have more time for themselves",
                 "image": "research-design.svg",
                 "slug": "smart-scheduler",
                 "component": "CaseStudy"
@@ -12,7 +12,7 @@
             {
                 "title": "Schlotzsky’s Ordering",
                 "category": ["UX Research", "UX Design", "Development"],
-                "description": "Enabling stay-at-home parents to manage their time",
+                "description": "Redesigning Schlotzsky's online ordering platform with accessibility in mind.",
                 "image": "research-design-dev.svg",
                 "slug": "schlotzskys",
                 "component": "CaseStudy2"
@@ -20,7 +20,7 @@
             {
                 "title": "Dengue Fever Viz",
                 "category": ["UX Design", "Development"],
-                "description": "Enabling stay-at-home parents to manage their time",
+                "description": "Interactive visualizations exploring the relationship between climate related variables and outbreaks. ",
                 "image": "design-dev.svg",
                 "slug": "dengue-visualization",
                 "component": "CaseStudy3"
@@ -28,7 +28,7 @@
             {
                 "title": "FarmFresh",
                 "category": ["UX Design", "Development"],
-                "description": "Enabling stay-at-home parents to manage their time",
+                "description": "Empowering local farmers to connect directly with customers on their own terms.",
                 "image": "design-dev.svg",
                 "slug": "farmfresh",
                 "component": "CaseStudy4"
@@ -36,7 +36,7 @@
             {
                 "title": "FoodStash",
                 "category": ["UX Design", "Development"],
-                "description": "Enabling stay-at-home parents to manage their time",
+                "description": "A robust platform for recording, preserving, sharing, and collaborating on recipes.",
                 "image": "design-dev.svg",
                 "slug": "foodstash",
                 "component": "CaseStudy5"
@@ -44,7 +44,7 @@
             {
                 "title": "Llama Programma",
                 "category": ["Development"],
-                "description": "Enabling stay-at-home parents to manage their time",
+                "description": "A simple ecommerce website dedicated to Llamas. It was pretty fun finding llama pictures.",
                 "image": "dev.svg",
                 "slug": "llama",
                 "component": "CaseStudy6"
@@ -126,18 +126,18 @@
             "items": [
                 {
                     "name": [
-                        "Georgia Tech Research Lab"
+                        "SmartScheduler"
                     ],
-                    "date": "9/2016 - 08/2018 | Atlanta, GA",
-                    "text": "Designed and developed professor’s website to increase visibility and attract prospective students. My work included a competitive analysis, expert interviews, design, usability testing, and development with React.",
+                    "date": "8/2018 - Present",
+                    "text": "UX research and design semester project at Georgia Tech that involved coming up with solutions to enable stay-at-home parents to manage their time more effectively so that they have more time for themselves.",
                     "textArray": []
                 },
                 {
                     "name": [
-                        "farmfresh"
+                        "Georgia Tech Research Lab"
                     ],
-                    "date": "7/2017 - 11/2017 | Atlanta, GA",
-                    "text": "Designed and developed a responsive web application serving as a platform that enables local farms to connect directly with customers. My work included a competitive analysis, design, and development with React, Node, and GraphQL.",
+                    "date": "9/2016 - 08/2018",
+                    "text": "Designed and developed professor’s website to increase visibility and attract prospective students. My work included a competitive analysis, expert interviews, design, usability testing, and development with React.",
                     "textArray": []
                 }
             ]

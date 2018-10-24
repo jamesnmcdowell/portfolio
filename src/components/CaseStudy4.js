@@ -5,6 +5,7 @@ import styled from 'styled-components';
 // import db from '../db.json';
 import { media, Container, ContainerV } from './Media';
 import { withRouteData } from 'react-static';
+import ImageZoom from 'react-medium-image-zoom';
 
 import schlotzkysLogo from '../assets/schlotzkys-title-narrow.png';
 import holisticView from '../assets/holistic-view.png';
@@ -18,7 +19,6 @@ import farmfreshWireframe from '../assets/farmfresh-wireframe2.jpg';
 
 
 let CaseStudy4 = ({ item }) => {
-    console.log(item);
     return (
         <Container vert>
             <GridContainer>
@@ -33,7 +33,17 @@ let CaseStudy4 = ({ item }) => {
                         <P>The target user group is local farmers interested in reaching more customers and customers who are interested in buying from local farms.</P>
                     </div>
                     <div>
-                        <Img src={farmfreshNarrow} />                
+                        <ImageZoom
+                            image={{
+                                src: farmfreshNarrow,
+                                alt: 'farmfresh product search page',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: farmfreshNarrow,
+                                alt: 'farmfresh product search page'
+                            }}
+                        />
                         <SubTitle>Logistics</SubTitle>
                         <ul>
                             <li><strong>Duration:</strong> May 2018 </li>
@@ -62,7 +72,17 @@ let CaseStudy4 = ({ item }) => {
                         <P>Following this I made a series of wireframes to plot out the various screens and their relationships that would exist within the platform.</P>
                     </div>
                     <VertCenter>
-                        <Img src={farmfreshWireframe} />
+                        <ImageZoom
+                            image={{
+                                src: farmfreshWireframe,
+                                alt: 'farmfresh wireframes',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: farmfreshWireframe,
+                                alt: 'farmfresh wireframes'
+                            }}
+                        />
                     </VertCenter>
                 </GridBox>  
                 <SecTitle>Implementation</SecTitle>
@@ -112,26 +132,42 @@ let VertCenter = styled.div`
     align-items: center;
 `;
 let MainTitle = styled.h1`
-    font-size: 60px; 
+    font-size:3.2rem;
+    ${media.phone`
+    font-size:3.5rem;
+    `}
+    ${media.bigPhone`
+    font-size:3.7rem;
+    `}
+     ${media.tablet`
+    font-size:3.9rem;
+    `}
 `;
 let SecTitle = styled.h2`
-    font-size: 40px;
     border-bottom: 4px #C21717 solid;
+    font-size:2.5rem;
+    ${media.phone`
+    font-size:2.8rem;
+    `}
+    ${media.bigPhone`
+    font-size:3rem;
+    `}
+     ${media.tablet`
+    font-size:3.2rem;
+    `}
+    
 `;
 let SubTitle = styled.h3`
-    font-size: 25px;
     font-weight: 600;
+    font-size:2rem;
+    ${media.phone`
+    font-size:2.3rem;
+    `}
+    ${media.bigPhone`
+    font-size:2.5rem;
+    `}
+     ${media.tablet`
+    font-size:2.7rem;
+    `}
    
 `;
-let BlueLine = styled.div`
-    width: 100%;
-    height: 100%;
-    background-color: #1B67AB;
-    grid-column: 2 / 3
-
-`;
-
-//    border: 4px #F2E818 solid;
-//     border: 4px #1B67AB  solid;
-//     border-bottom: 4px #C21717 solid;
-//     border-right: 4px #C21717 solid;

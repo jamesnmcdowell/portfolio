@@ -13,13 +13,6 @@ import resumePDF from '../assets/JMcDowell_2018.pdf';
 
 let ResumeScreen = () =>
 <div>
-    {/* <Container2 >
-    <GridTop>
-        <Button target="_blank" href={resumePDF}>
-            <span>Download PDF</span>
-        </Button>
-    </GridTop>
-    </Container2> */}
      <GridDesign>
         <Line>
         </Line>
@@ -144,10 +137,3 @@ let Button = styled.a`
         text-transform: uppercase;
     }
 `;
-
- 
-
-//  grid-template-areas: "experience education"
-//                          "projects  skills"
-//                          "awards  ";
-

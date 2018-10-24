@@ -7,28 +7,27 @@ import { resume } from '../db.json';
 let ResumeBlock = ({item}) =>
     <FlexDiv>
         <SectionTitle> {item.section} </SectionTitle>
-        {console.log(item)}
         {(item.items) &&
-            item.items.map((elem) =>
-                <div>
+            item.items.map((elem, i) =>
+                <div key={`${i}_${elem}`}>
                     {(elem.name) &&
-                        elem.name.map((n) =>
-                            <Name>{n}</Name>
+                        elem.name.map((n, i) =>
+                            <Name key={`${i}_${n}`}>{n}</Name>
                         )
                     }
                     <Date> {elem.date && elem.date} </Date>
                     <Text> {elem.text && elem.text} </Text>
                     <Ul>
                         {(elem.textArray) &&
-                            elem.textArray.map((bullet) =>
-                                <Li>{bullet}</Li>
+                            elem.textArray.map((bullet, i) =>
+                                <Li key={`${i}_${bullet}`}>{bullet}</Li>
                             )
                         }
                     </Ul>
                     <FlexHalf>
                         {(elem.gridArray) &&
-                            elem.gridArray.map((bullet) =>
-                                <span>{bullet}</span>
+                            elem.gridArray.map((bullet, i) =>
+                                <span key={`${i}_${bullet}`}>{bullet}</span>
                             )
                         }
                     </FlexHalf>

@@ -16,13 +16,13 @@ let Header = ({ headerActive, toggleMenu, MenuOpen, match }) =>
             </LogoContainer>
             <MenuLinks>
                 <NavLink to="/work"  {...(match.params.page === 'work')? {active: "true"} : {}} >
-                    <span> WORK </span>
+                    <Span> WORK </Span>
                 </NavLink>
                 <NavLink to="/about" {...(match.params.page === 'about') ? { active: "true" } : {}}>
-                    <span> ABOUT</span>
+                    <Span> ABOUT</Span>
                 </NavLink>
                 <NavLink to="/resume" {...(match.params.page === 'resume') ? { active: "true" } : {}}>
-                    <span> RESUME</span>
+                    <Span> RESUME</Span>
                 </NavLink>
             </MenuLinks>
         </FlexNav>
@@ -99,6 +99,19 @@ let NavLink = styled(Link) `
     box-shadow: ${props => props.active ? "inset 0px -7px 0px 0px #C21717" : "7px solid transparent" }
     `;
 
+let Span = styled.span`
+    font-size:1.2rem;
+    ${media.phone`
+    font-size:1.3rem;
+    `}
+    ${media.bigPhone`
+    font-size:1.7rem;
+    `}
+     ${media.tablet`
+        font-size:1.7rem;
+    `}
+    `;
+
 let Logo = styled.h1 `
     font-size:1.2rem;
     width: auto;
@@ -109,7 +122,7 @@ let Logo = styled.h1 `
     &:active{
     }
     ${media.phone`
-    font-size:1.6rem;
+    font-size:1.5rem;
     `}
     ${media.bigPhone`
     font-size:2rem;

@@ -2,7 +2,7 @@ import React from 'react'
 import Shell from './Shell';
 import { Link } from 'react-static';
 import styled from 'styled-components';
-// import * as images from '../assets/students/';
+import { media, Container, ContainerV } from './Media';
 
 let colorKeys = {
     "UX Research": "#1B67AB",
@@ -14,21 +14,19 @@ let colorKeys = {
 let PortfolioItem = ({ item }) =>
     <Link className="product-card-link" to={`/work/${item.slug}`} >
         <Card>
-            {/* <Img src={require(`../assets/${item.image}`)} /> */}
             <Img src={require(`../assets/${item.image}`)} />
             <Info>
                 <TitleBox>
                     <Title>{item.title}</Title>
                 </TitleBox>
                 <Description>
-                    Enabling stay-at-home parents to manage their time
+                    {item.description}
                 </Description>
             </Info>
             <Tags>
                 {
                     item.category.map((c, i) => {
-                        console.log(colorKeys[c]);
-                        return (i < item.category.length - 1) ? <Text col={colorKeys[c]} > {c} </Text> : <Text col={colorKeys[c]} > {c} </Text>
+                        return (i < item.category.length - 1) ? <Text key={`${i}_${c}`} col={colorKeys[c]} > {c} </Text> : <Text key={`${i}_${c}`} col={colorKeys[c]} > {c} </Text>
 
                     }
                     )
@@ -85,6 +83,17 @@ let Title = styled.h5`
     font-size: 3rem;
     font-weight: 700;
     margin: 0;
+    font-size:2.2rem;
+    ${media.phone`
+    font-size:2.5rem;
+    `}
+    ${media.bigPhone`
+    font-size:2.7rem;
+    `}
+     ${media.tablet`
+    font-size:2.9rem;
+    `}
+    
    
 `;
 let Text = styled.span`
