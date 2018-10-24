@@ -5,6 +5,7 @@ import styled from 'styled-components';
 // import db from '../db.json';
 import { media, Container, ContainerV } from './Media';
 import { withRouteData } from 'react-static';
+import ImageZoom from 'react-medium-image-zoom';
 
 import schlotzkysLogo from '../assets/schlotzkys-title-narrow.png';
 import holisticView from '../assets/holistic-view.png';
@@ -12,41 +13,43 @@ import selectionView from '../assets/selection-view.png';
 import comparisonView from '../assets/comparison-view.png';
 import magnetView from '../assets/magnet-view.png';
 import datavisBrainstorming from '../assets/dataviz-brainstorming-crop.jpg';
-import poster from '../assets/poster.jpg';
+import poster from '../assets/finalmockup-dengue.jpg';
 
 
 
 
 let CaseStudy3 = ({ item }) => {
-    console.log(item);
     return (
         <Container vert>
             <GridContainer>
                 <MainTitle>{item.title}</MainTitle>
+                <ImageZoom
+                    image={{
+                        src: poster,
+                        alt: 'poster presentation of designs',
+                        style: { width: '100%' }
+                    }}
+                    zoomImage={{
+                        src: poster,
+                        alt: 'poster presentation of designs'
+                    }}
+                />
                 <SecTitle>Overview </SecTitle>
+                <SubTitle>Problem/Motivation</SubTitle>
+                <P>Dengue Fever is a major global public health concern — 40% of the world’s population is at risk for developing Dengue Fever (CDC 2014) and it is  estimated that there are 390 million new cases each year. Additionally, major widespread outbreaks are on the rise and are overwhelming medical and relief services. Thus, forecasting new outbreaks is a critical need for public health officials combating Dengue.</P>
+                <P>Because Dengue is transmitted by mosquitoes, there is a known relationship between climate and outbreaks . But how exactly and to what degree these different variables contribute to outbreaks is not as well known. The goal of this project is to build interactive visualizations to help understand the relationship between complex climate related variables and outbreaks in order to support the task of forecasting future outbreaks. </P>
                 <GridBox>
                     <div>
-                        <SubTitle>Problem/Motivation</SubTitle>
-                        <P>Dengue Fever is a major global public health concern — 40% of the world’s population is at risk for developing Dengue Fever (CDC 2014) and it is  estimated that there are 390 million new cases each year. Additionally, major widespread outbreaks are on the rise and are overwhelming medical and relief services. Thus, forecasting new outbreaks is a critical need for public health officials combating Dengue.</P>
-                        <P>Because Dengue is transmitted by mosquitoes, there is a known relationship between climate and outbreaks . But how exactly and to what degree these different variables contribute to outbreaks is not as well known. The goal of this project is to build interactive visualizations to help understand the relationship between complex climate related variables and outbreaks in order to support the task of forecasting future outbreaks. </P>
                         <SubTitle>Users</SubTitle>
                         <P>The users of our interactive visualization would be policy makers, medical staff, relief workers, and researchers. Policy makers and relief workers would be interested in knowing if Dengue cases are on the rise so as to allocate more funding for efforts to combat infections. Researchers and medical staff are interested in better understanding how climate influences outbreaks in order to predict future incidents. Additionally, these individuals would be interested in understanding if there are regular temporal patterns in the outbreaks.</P>
                     </div>
-                    <VertCenter>
-                        <Img src={poster} />
-                    </VertCenter>
-                </GridBox>
-                <GridBox>
                     <div>
                         <SubTitle>Logistics</SubTitle>
                         <ul>
                             <li><strong>Duration:</strong> August 2018 - Present</li>
                             <li><strong>The Team:</strong> James, Julia, Sijia {"&"} Bryan</li>
                             <li><strong>My Role:</strong> D3.js, Sketching, Low and High-Fidelity Protoype Design, Report Writing</li>
-                        </ul>  
-                    </div>
-                    <div>
-                        
+                        </ul>
                     </div>
                 </GridBox>
 
@@ -67,7 +70,17 @@ let CaseStudy3 = ({ item }) => {
                         <P>Eventually we narrowed down our ideas into four distinct designs. We presented these ideas to other graduate students and faculty to get early feedback and help guide us in our choice of a design idea. </P>
                     </div>
                     <VertCenter>
-                        <Img src={datavisBrainstorming} />
+                        <ImageZoom
+                            image={{
+                                src: datavisBrainstorming,
+                                alt: 'brainstorming session for designs',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: datavisBrainstorming,
+                                alt: 'brainstorming session for designs'
+                            }}
+                        />
                     </VertCenter>
                 </GridBox> 
                 <br/>
@@ -75,11 +88,31 @@ let CaseStudy3 = ({ item }) => {
                 <br />
                 <GridBox>
                     <VertCenter>
-                        <Img src={holisticView} />
+                        <ImageZoom
+                            image={{
+                                src: holisticView,
+                                alt: 'holistic view visualization',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: holisticView,
+                                alt: 'holistic view visualization'
+                            }}
+                        />
                         <BTitle>Design Idea #1: Holistic View</BTitle>
                     </VertCenter>
                     <VertCenter>
-                        <Img src={magnetView} />
+                        <ImageZoom
+                            image={{
+                                src: magnetView,
+                                alt: 'magnet view visualization',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: magnetView,
+                                alt: 'magnet view visualization'
+                            }}
+                        />
                         <BTitle>Design Idea #2: Magnet</BTitle>
                     </VertCenter>
                 </GridBox>  
@@ -87,11 +120,31 @@ let CaseStudy3 = ({ item }) => {
                 <br />
                 <GridBox>
                     <VertCenter>
-                        <Img src={comparisonView} />
+                        <ImageZoom
+                            image={{
+                                src: comparisonView,
+                                alt: 'comparison view visualization',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: comparisonView,
+                                alt: 'comparison view visualization'
+                            }}
+                        />
                         <BTitle>Design Idea #3: Comparison</BTitle>
                     </VertCenter>
                     <VertCenter>
-                        <Img src={selectionView} />
+                        <ImageZoom
+                            image={{
+                                src: selectionView,
+                                alt: 'selection view visualization',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: selectionView,
+                                alt: 'selection view visualization'
+                            }}
+                        />
                         <BTitle>Design Idea #4: Selection Window</BTitle>
                     </VertCenter>
                 </GridBox>  
@@ -118,7 +171,6 @@ let GridContainer = styled.div`
 let BTitle = styled.p`
     font-size: 18px;
     font-weight: 600;
-    text-align:center;
 `;
 let P = styled.p`
     font-size: 1.7rem;
@@ -138,26 +190,42 @@ let VertCenter = styled.div`
     align-items: center;
 `;
 let MainTitle = styled.h1`
-    font-size: 60px; 
+    font-size:3.2rem;
+    ${media.phone`
+    font-size:3.5rem;
+    `}
+    ${media.bigPhone`
+    font-size:3.7rem;
+    `}
+     ${media.tablet`
+    font-size:3.9rem;
+    `}
 `;
 let SecTitle = styled.h2`
-    font-size: 40px;
     border-bottom: 4px #C21717 solid;
+    font-size:2.5rem;
+    ${media.phone`
+    font-size:2.8rem;
+    `}
+    ${media.bigPhone`
+    font-size:3rem;
+    `}
+     ${media.tablet`
+    font-size:3.2rem;
+    `}
+    
 `;
 let SubTitle = styled.h3`
-    font-size: 25px;
     font-weight: 600;
+    font-size:2rem;
+    ${media.phone`
+    font-size:2.3rem;
+    `}
+    ${media.bigPhone`
+    font-size:2.5rem;
+    `}
+     ${media.tablet`
+    font-size:2.7rem;
+    `}
    
 `;
-let BlueLine = styled.div`
-    width: 100%;
-    height: 100%;
-    background-color: #1B67AB;
-    grid-column: 2 / 3
-
-`;
-
-//    border: 4px #F2E818 solid;
-//     border: 4px #1B67AB  solid;
-//     border-bottom: 4px #C21717 solid;
-//     border-right: 4px #C21717 solid;

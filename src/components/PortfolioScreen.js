@@ -11,8 +11,8 @@ let PortfolioScreen = () =>
         <Container vert>
             <PortfolioGrid>
                 {
-                    portfolioItems.item.map((item) =>
-                        <PortfolioItem item={item} />
+                    portfolioItems.item.map((item, i) =>
+                        <PortfolioItem key={`${i}_${item}`}item={item} />
                     )
                 }
             </PortfolioGrid>
@@ -24,7 +24,16 @@ export default PortfolioScreen;
 let PortfolioGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 6rem;
+    ${media.phone`
+    grid-gap: 6rem;
+    `}
+    ${media.bigPhone`
+    grid-gap: 6rem;
+    `}
+     ${media.tablet`
     grid-gap: 12rem;
+    `}
    
 `;
 let Outer = styled.div`

@@ -2,23 +2,23 @@ import React from 'react';
 import { Link } from 'react-static';
 import styled from 'styled-components';
 import { media, Container } from './Media';
-// import twitter from '../assets/twitterlogo.svg';
-// import gScholar from '../assets/googlescholar.svg';
-// import email from '../assets/mail.svg';
+import linkedin from '../assets/linkedin.svg';
+import email from '../assets/email.svg';
+import github from '../assets/github.svg';
 
 
 let Footer = () =>
     <FooterStyled >
         <Container>
             <FlexContainer>
-                <a href="" target="_blank">
-                    <p> Social 1 </p>
+                <a name="email" href="mailto:james.n.mcdowell@gmail.com" target="_blank">
+                    <Img src={email}/>
                 </a>
-                <a href="" target="_blank">
-                    <p> Social 2 </p>
+                <a name="linkedin" href="https://www.linkedin.com/in/jamesnmcdowell/" target="_blank">
+                    <Img src={linkedin} />
                 </a>
-                <a href="" target="_blank">
-                    <p> Social 3 </p>
+                <a name="github" href="https://github.com/jamesnmcdowell" target="_blank">
+                    <Img src={github} />
                 </a>
             </FlexContainer>
         </Container>
@@ -33,15 +33,18 @@ let FooterStyled = styled.footer`
 `;
 let FlexContainer = styled.div`
     display: flex;
-    flex-direction: column;
     text-align: center;
-    ${media.tablet`
     text-align: left;
-    justify-content:space-between;
+    justify-content:center;
     flex-direction: row;
     align-items: center;
+    ${media.tablet`
+    
     `}     
 `;
 let Contact = styled.div`
     text-align:center;
+`;
+let Img = styled.img`
+    width: 40px;
 `;

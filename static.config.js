@@ -2,20 +2,14 @@ import axios from 'axios'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 import { portfolioItems } from './src/db.json';
-import { reloadRoutes } from 'react-static/node';
-import chokidar from 'chokidar';
-
-chokidar.watch('./src/db.json').on('all', () => {
-  console.log('asda');
-  reloadRoutes()
-});
+import favicon from './src/assets/JamesFavicon.png';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 export default {
   getSiteData: () => ({
     title: 'React Static',
   }),
   getRoutes: async () => {
-    console.log(portfolioItems);
     const items = portfolioItems.item;
     return [
       {
@@ -29,7 +23,6 @@ export default {
           items,
         }),
         children: items.map(item => {
-          // console.log(item); 
           return ({
           path: `/${item.slug}`,
           component: `src/components/${item.component}`,
@@ -65,6 +58,10 @@ export default {
         },
       }
     ];
+    config.plugins = [
+      ...config.plugins,
+      new CopyWebpackPlugin([{ from: `${__dirname}/src/assets/JamesFavicon.png`, to: './static/JamesFavicon.png' }])
+    ]
     return config;
   },
   renderToHtml: (render, Comp, meta) => {
@@ -84,6 +81,12 @@ export default {
           <Head>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>James McDowell | UX Researcher and Designer</title>
+            <meta name="description" content="UX Researcher and Designer who is passionate about bringing genuine value to people's life yet considerate of the impact of design on an individual, their relationships with others, and society as a whole."/>
+            <meta name="author" content="James McDowell"/>
+            <meta name="keywords" content="ux researcher, ux designer, ux development" />
+            <link rel="canonical" href="https://jamesnmcdowell.com" />
+            <link rel="icon" href="/static/JamesFavicon.png" />
             {renderMeta.styleTags}
             <link href="https://fonts.googleapis.com/css?family=Baumans|Muli:300,400,600,700|Nunito:300,400,600,700,800" rel="stylesheet" />
           </Head>

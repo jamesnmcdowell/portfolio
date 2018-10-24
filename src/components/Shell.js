@@ -2,34 +2,23 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import styled from 'styled-components';
-// import MobileMenu from './MobileMenu';
-import { withState } from 'recompose';
+require( '../assets/JamesFavicon.png');
 
-let Shell = ({ children, headerActive, MenuOpen, toggleMenu, match }) =>
-    <Site className="Site" className={(MenuOpen) ? "mobile-menu-wrapper menu-open" : "mobile-menu-wrapper"}>
-        <SiteHeader match={match} className="Site-header" headerActive={headerActive} toggleMenu={toggleMenu} MenuOpen={MenuOpen} />
-        <SiteContent className={(MenuOpen) ? " Site-content menu-open" : "Site-content"} toggleMenu={toggleMenu} MenuOpen={MenuOpen}>
+let Shell = ({ children, match }) =>
+    <Site>
+        <SiteHeader match={match} />
+        <SiteContent>
             {children}
         </SiteContent>
-        {/* <MobileMenu MenuOpen={MenuOpen} toggleMenu={toggleMenu} /> */}
-        <SiteFooter className="Site-footer" />
+        <SiteFooter/>
     </Site>
 
-
-
-let ShellLocalState = withState(
-    "MenuOpen",
-    "toggleMenu",
-    false
-)(Shell);
-
-export default ShellLocalState;
+export default Shell;
 
 let Site = styled.div`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
 `;
 
 let SiteHeader = styled(Header) `

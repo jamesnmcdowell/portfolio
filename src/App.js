@@ -65,9 +65,6 @@ const App = () => (
     <Router>
         <Route path="/:page?" render={(props) => (
           <AppContent {...props} />
-      // <Shell {...this.props}>
-      //   <Routes />
-      // </Shell>
         )}/> 
     </Router>
 );

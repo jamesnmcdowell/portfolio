@@ -5,16 +5,19 @@ import styled from 'styled-components';
 // import db from '../db.json';
 import { media, Container, ContainerV } from './Media';
 import { withRouteData } from 'react-static';
+import ImageZoom from 'react-medium-image-zoom';
 
 import schlotzkysLogo from '../assets/schlotzkys-title-narrow.png';
 import taskAnalysis from '../assets/TA_final.png';
 import affinityWall from '../assets/affinity-wall-r2.jpg';
 import treeTest from '../assets/tree-test-chart.jpg';
-
+import personaAlex from '../assets/Persona-Alex.jpg';
+import personaOlivia from '../assets/Persona-Olivia.jpg';
+import journeyAlex from '../assets/userjourney-alex.jpg';
+import journeyOlivia from '../assets/userjourney-olivia.jpg';
 
 
 let CaseStudy2 = ({ item }) => {
-    console.log(item);
     return (
         <Container vert>
             <GridContainer>
@@ -30,6 +33,7 @@ let CaseStudy2 = ({ item }) => {
                     </div>
                     <div>
                         <Img src={schlotzkysLogo} />
+                        
                         <SubTitle>Logistics</SubTitle>
                         <ul>
                             <li><strong>Duration:</strong> August 2018 - Present</li>
@@ -46,8 +50,17 @@ let CaseStudy2 = ({ item }) => {
 
                 <SubTitle>Task Analysis</SubTitle>
                 <P>We conducted task analysis to understand users’ goals when they are ordering from the Schlotzsky’s website and how they are able to complete their goal on the site. Conducting task analysis also allowed us to catch navigational issues on the website and understand the navigation process at a more granular level. Performing a task analysis provided us with a baseline for the interactions with the system which helped inform our interview questions and direction with further research methods. </P>
-                <Img src={taskAnalysis} />
-
+                <ImageZoom
+                    image={{
+                        src: taskAnalysis,
+                        alt: 'task analysis map',
+                        style: { width: '100%' }
+                    }}
+                    zoomImage={{
+                        src: taskAnalysis,
+                        alt: 'task analysis map'
+                    }}
+                />
                 <SubTitle>Cognitive Walkthrough</SubTitle>
                 <P>Our goal for performing a cognitive walkthrough was to understand the user’s expectations and information needs while ordering online from Schlotzsky’s. Although we conducted a task analysis to analyze the steps a user would to take to complete a task, we chose to conduct a cognitive walkthrough as well because the process gives us an understanding of the of user’s expectations throughout the navigation of the website.  </P>
 
@@ -67,7 +80,17 @@ let CaseStudy2 = ({ item }) => {
                         <P>We took detailed notes on all interviews and then converted participants data into a total of 170 sticky notes in order to perform affinity mapping. We then eventually grouped our stickies into 37 blue groups and then groups these blue groups into 10 overarching categories designated by pink stickies. This process allowed to identify common themes that our participants while navigating the ordering process.   </P>
                     </div>
                     <div>
-                        <Img src={affinityWall} />
+                        <ImageZoom
+                            image={{
+                                src: affinityWall,
+                                alt: 'affinity mapping',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: affinityWall,
+                                alt: 'affinity mapping'
+                            }}
+                        />
                     </div>
                 </GridBox>
 
@@ -86,7 +109,17 @@ let CaseStudy2 = ({ item }) => {
                         </ol>                    
                     </div>
                     <div>
-                        <Img src={treeTest} />
+                        <ImageZoom
+                            image={{
+                                src: treeTest,
+                                alt: 'tree test pie map',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: treeTest,
+                                alt: 'tree test pie map'
+                            }}
+                        />
                     </div>
                 </GridBox>
                 
@@ -102,7 +135,69 @@ let CaseStudy2 = ({ item }) => {
                     <li>Navigation is tedious and has many redundant steps and loops. </li>
                     <li>There is no way to search or filter items. </li>
                     <li>Appropriate Feedback is not provided </li>
-                </ol>  
+                </ol>
+
+                <SubTitle>Personas</SubTitle>
+                <GridBox>
+                    <div>
+                        <ImageZoom
+                            image={{
+                                src: personaAlex,
+                                alt: 'persona for Alex',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: personaAlex,
+                                alt: 'persona for Alex'
+                            }}
+                        />
+                    </div>
+                    <div>
+                        <ImageZoom
+                            image={{
+                                src: personaOlivia,
+                                alt: 'persona for Olivia',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: personaOlivia,
+                                alt: 'persona for Olivia'
+                            }}
+                        />
+                    </div>
+                </GridBox>
+
+                <SubTitle>User Journeys</SubTitle>
+                <GridBox>
+                    <div>
+                        <ImageZoom
+                            image={{
+                                src: journeyAlex,
+                                alt: 'user journey for Alex',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: journeyAlex,
+                                alt: 'user journey for Alex'
+                            }}
+                        />
+                    </div>
+                    <div>
+                        <ImageZoom
+                            image={{
+                                src: journeyOlivia,
+                                alt: 'user journey for Olivia',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: journeyOlivia,
+                                alt: 'user journey for Olivia'
+                            }}
+                        />
+                    </div>
+                </GridBox>
+                
+
 
                 <SecTitle>Next Steps</SecTitle>
                 <P>Equipped with the findings derived from our research, we will iteratively design and prototype Schlotzsky’s online ordering platform. We will then perform evaluative testing with the new online platform and compare the results with the initial platform to evaluate relative performance.  In addition to automated accessibility testing, we intend to reach out to several users with vision impairments in order to test usability of the new, accessible ordering platform.</P>
@@ -129,7 +224,6 @@ let P = styled.p`
     font-size: 1.7rem;
 `;
 
-
 let Img = styled.img`
     width: 100%;
 `;
@@ -144,26 +238,42 @@ let VertCenter = styled.div`
     align-items: center;
 `;
 let MainTitle = styled.h1`
-    font-size: 60px; 
+    font-size:3.2rem;
+    ${media.phone`
+    font-size:3.5rem;
+    `}
+    ${media.bigPhone`
+    font-size:3.7rem;
+    `}
+     ${media.tablet`
+    font-size:3.9rem;
+    `}
 `;
 let SecTitle = styled.h2`
-    font-size: 40px;
     border-bottom: 4px #C21717 solid;
+    font-size:2.5rem;
+    ${media.phone`
+    font-size:2.8rem;
+    `}
+    ${media.bigPhone`
+    font-size:3rem;
+    `}
+     ${media.tablet`
+    font-size:3.2rem;
+    `}
+    
 `;
 let SubTitle = styled.h3`
-    font-size: 25px;
     font-weight: 600;
+    font-size:2rem;
+    ${media.phone`
+    font-size:2.3rem;
+    `}
+    ${media.bigPhone`
+    font-size:2.5rem;
+    `}
+     ${media.tablet`
+    font-size:2.7rem;
+    `}
    
 `;
-let BlueLine = styled.div`
-    width: 100%;
-    height: 100%;
-    background-color: #1B67AB;
-    grid-column: 2 / 3
-
-`;
-
-//    border: 4px #F2E818 solid;
-//     border: 4px #1B67AB  solid;
-//     border-bottom: 4px #C21717 solid;
-//     border-right: 4px #C21717 solid;
