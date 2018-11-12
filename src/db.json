@@ -10,9 +10,9 @@
                 "component": "CaseStudy"
             },
             {
-                "title": "Schlotzsky’s Ordering",
+                "title": "Accessible Ordering",
                 "category": ["UX Research", "UX Design", "Development"],
-                "description": "Redesigning Schlotzsky's online ordering platform with accessibility in mind.",
+                "description": "Project with Schlotzsky's to improve their ordering platform with accessibility in mind.",
                 "image": "research-design-dev.svg",
                 "slug": "schlotzskys",
                 "component": "CaseStudy2"
@@ -134,10 +134,10 @@
                 },
                 {
                     "name": [
-                        "Georgia Tech Research Lab"
+                        "Accessible Ordering"
                     ],
                     "date": "9/2016 - 08/2018",
-                    "text": "Designed and developed professor’s website to increase visibility and attract prospective students. My work included a competitive analysis, expert interviews, design, usability testing, and development with React.",
+                    "text": "UX research, design, and development project in collaboration with Schlotzsky's to improve their ordering platform with accessibility in mind.",
                     "textArray": []
                 }
             ]
