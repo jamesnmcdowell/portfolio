@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "copy-webpack-plugin": "^4.5.4",
+    "nuka-carousel": "^4.4.7",
     "polished": "^2.1.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",

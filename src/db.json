@@ -2,6 +2,18 @@
     "portfolioItems": {
         "item": [
             {
+                "title": "Accessible Ordering",
+                "category": [
+                    "UX Research",
+                    "UX Design",
+                    "Development"
+                ],
+                "description": "Project with Schlotzsky's to improve their ordering platform with accessibility in mind.",
+                "image": "research-design-dev.svg",
+                "slug": "schlotzskys",
+                "component": "CaseStudy2"
+            },
+            {
                 "title": "SmartScheduler",
                 "category": ["UX Research", "UX Design" ],
                 "description":"Enabling stay-at-home parents to manage their time so that they have more time for themselves",
@@ -9,14 +21,7 @@
                 "slug": "smart-scheduler",
                 "component": "CaseStudy"
             },
-            {
-                "title": "Accessible Ordering",
-                "category": ["UX Research", "UX Design", "Development"],
-                "description": "Project with Schlotzsky's to improve their ordering platform with accessibility in mind.",
-                "image": "research-design-dev.svg",
-                "slug": "schlotzskys",
-                "component": "CaseStudy2"
-            },
+           
             {
                 "title": "Dengue Fever Viz",
                 "category": ["UX Design", "Development"],

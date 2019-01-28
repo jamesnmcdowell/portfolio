@@ -14,6 +14,8 @@ import comparisonView from '../assets/comparison-view.png';
 import magnetView from '../assets/magnet-view.png';
 import datavisBrainstorming from '../assets/dataviz-brainstorming-crop.jpg';
 import poster from '../assets/finalmockup-dengue.jpg';
+import dengueFinal from '../assets/dengue-final.jpg';
+import dengueFinal2 from '../assets/dengue-final2.jpg';
 
 
 
@@ -23,21 +25,32 @@ let CaseStudy3 = ({ item }) => {
         <Container vert>
             <GridContainer>
                 <MainTitle>{item.title}</MainTitle>
-                <ImageZoom
-                    image={{
-                        src: poster,
-                        alt: 'poster presentation of designs',
-                        style: { width: '100%' }
-                    }}
-                    zoomImage={{
-                        src: poster,
-                        alt: 'poster presentation of designs'
-                    }}
-                />
                 <SecTitle>Overview </SecTitle>
-                <SubTitle>Problem/Motivation</SubTitle>
-                <P>Dengue Fever is a major global public health concern — 40% of the world’s population is at risk for developing Dengue Fever (CDC 2014) and it is  estimated that there are 390 million new cases each year. Additionally, major widespread outbreaks are on the rise and are overwhelming medical and relief services. Thus, forecasting new outbreaks is a critical need for public health officials combating Dengue.</P>
-                <P>Because Dengue is transmitted by mosquitoes, there is a known relationship between climate and outbreaks . But how exactly and to what degree these different variables contribute to outbreaks is not as well known. The goal of this project is to build interactive visualizations to help understand the relationship between complex climate related variables and outbreaks in order to support the task of forecasting future outbreaks. </P>
+                <GridBox>
+                    <div>
+                        <SubTitle>Problem/Motivation</SubTitle>
+                        <P>Dengue Fever is a major global public health concern — 40% of the world’s population is at risk for developing Dengue Fever (CDC 2014) and it is  estimated that there are 390 million new cases each year. Additionally, major widespread outbreaks are on the rise and are overwhelming medical and relief services. Thus, forecasting new outbreaks is a critical need for public health officials combating Dengue.</P>
+                        <P>Because Dengue is transmitted by mosquitoes, there is a known relationship between climate and outbreaks . But how exactly and to what degree these different variables contribute to outbreaks is not as well known. The goal of this project is to build interactive visualizations to help understand the relationship between complex climate related variables and outbreaks in order to support the task of forecasting future outbreaks. </P>
+                    </div>
+                    <VertCenter>
+                        <ImageZoom
+                            image={{
+                                src: dengueFinal2,
+                                alt: 'poster presentation of designs',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: dengueFinal2,
+                                alt: 'poster presentation of designs'
+                            }}
+                        />
+                        <Center>
+                            <Button target="_blank" href="https://infovis-denguefever.netlify.com/">
+                                <span>View Site</span>
+                            </Button>
+                        </Center>
+                    </VertCenter>
+                </GridBox>
                 <GridBox>
                     <div>
                         <SubTitle>Users</SubTitle>
@@ -63,7 +76,7 @@ let CaseStudy3 = ({ item }) => {
 
                 <SecTitle>Design Process</SecTitle>
                 
-                <SubTitle>Brainstorming:</SubTitle>
+                <SubTitle>Brainstorming</SubTitle>
                 <GridBox>
                     <div>
                         <P>We met as a team for an ideation session where we individually came up with as many design ideas as possible that would address our goal in displaying the data. We went around the table and each of us presented our design concepts to each other. After going through all of our ideas, we discussed strengths and weaknesses of the designs and were able to merge some of our smaller design concepts into unified, more compelling ones. </P>
@@ -149,9 +162,25 @@ let CaseStudy3 = ({ item }) => {
                     </VertCenter>
                 </GridBox>  
 
-                <SecTitle>Next Steps</SecTitle>
-                <P>We are currently working on bringing our final design to life using D3.js, a JavaScript framework for developing rich, interactive data-visualizations.</P>
+                <SecTitle>Final Design</SecTitle>
+                <GridBox>
+                    <div>
+                        <P>Inspired by visual analytics systems, our tool gives users a way to manipulate the clusters of outbreaks and uncover the importance of certain aspects of the data. Additionally, through the use of tooltips and side panels, users can dig into the data to see the fine-grain details and form conclusions.   </P>
+                        <P> Take a look at the walkthrough of the visualization on the right to learn more. </P>
+                    </div>
+                    <div>
+                        <Frame>
+                            <iframe
+                                src={`https://player.vimeo.com/video/313723577?title=0&byline=0&portrait=0`}
+                                allowFullScreen="true"
+                                webkitallowfullscreen="true"
+                                mozallowfullscreen="true"
+                            />
+                        </Frame>
+                    </div>
+                </GridBox>
 
+                
 
 
             </GridContainer>
@@ -228,4 +257,44 @@ let SubTitle = styled.h3`
     font-size:2.7rem;
     `}
    
+`;
+
+let Center = styled.div`
+    text-align: center;
+`;
+
+let Button = styled.a`
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border: 5px solid #1B67AB;
+    padding: 1rem;
+    &:hover {
+        background-color: #1B67AB;
+        color: white;
+    }
+    span {
+        text-transform: uppercase;
+    }
+`;
+
+let Frame = styled.div`
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 58%;
+    iframe {
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        
+    }
 `;
