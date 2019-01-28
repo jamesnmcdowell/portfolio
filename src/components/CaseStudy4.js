@@ -24,6 +24,7 @@ let CaseStudy4 = ({ item }) => {
             <GridContainer>
                 <MainTitle>{item.title}</MainTitle>
                 <SecTitle>Overview </SecTitle>
+                
                 <GridBox>
                     <div>
                         <SubTitle>Problem/Motivation</SubTitle>
@@ -31,6 +32,7 @@ let CaseStudy4 = ({ item }) => {
                         <P>This project was inspired by from my personal experiences. I had been buying unpasteurized milk and other hard to find products from a local farm for quite some time and began to really value having access to unique products from a local farm rather than solely being dependent on traditional retail grocery chains or farmers markets. The farm that I purchase from has a mobile trailer which is parked multiple times throughout the week at different locations during regular time slots  in order to reach a wide variety of customers. The goal of this project is to create a platform to enable this coordination between local farmers and customers that is both extremely easy to operate and free for farmers. </P>
                         <SubTitle>Users</SubTitle>
                         <P>The target user group is local farmers interested in reaching more customers and customers who are interested in buying from local farms.</P>
+
                     </div>
                     <div>
                         <ImageZoom
@@ -44,6 +46,11 @@ let CaseStudy4 = ({ item }) => {
                                 alt: 'farmfresh product search page'
                             }}
                         />
+                        <Center>
+                        <Button target="_blank" href="http://farm-fresh-app.herokuapp.com/#/">
+                            <span>View Site</span>
+                        </Button>
+                        </Center>
                         <SubTitle>Logistics</SubTitle>
                         <ul>
                             <li><strong>Duration:</strong> May 2018 </li>
@@ -117,6 +124,9 @@ let BTitle = styled.p`
 let P = styled.p`
     font-size: 1.7rem;
 `;
+let Center = styled.div`
+    text-align: center;
+`;
 
 let Img = styled.img`
     width: 100%;
@@ -170,4 +180,21 @@ let SubTitle = styled.h3`
     font-size:2.7rem;
     `}
    
+`;
+
+
+
+let Button = styled.a`
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border: 5px solid #1B67AB;
+    padding: 1rem;
+    &:hover {
+        background-color: #1B67AB;
+        color: white;
+    }
+    span {
+        text-transform: uppercase;
+    }
 `;
