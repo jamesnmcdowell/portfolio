@@ -16,8 +16,21 @@ import boardgame from '../assets/HomeHelper.jpg';
 import storyBoardHH from '../assets/storyboard3-HH.jpg';
 import storyBoardBG2 from '../assets/storyboard2-BG.png';
 import storyBoardBG1 from '../assets/storyboard1-BG.png';
-
-
+import Carousel from 'nuka-carousel';
+import slide0 from '../assets/smartscheduler-homescreen.jpg';
+import slide1 from '../assets/tutorial2-page-001.jpg';
+import slide2 from '../assets/tutorial2-page-002.jpg';
+import slide3 from '../assets/tutorial2-page-003.jpg';
+import slide4 from '../assets/tutorial2-page-004.jpg';
+import slide5 from '../assets/tutorial2-page-005.jpg';
+import slide6 from '../assets/tutorial2-page-006.jpg';
+import slide7 from '../assets/tutorial2-page-007.jpg';
+import slide8 from '../assets/tutorial2-page-008.jpg';
+import slide9 from '../assets/tutorial2-page-009.jpg';
+import slide10 from '../assets/tutorial2-page-010.jpg';
+import mobileApp from '../assets/Scheduler-mobile-app.jpg';
+import systemsMap from '../assets/systems-map.jpg';
+import analytics from '../assets/analytics-view.jpg';
 
 let CaseStudy = ({item}) => {
     return (
@@ -280,9 +293,186 @@ let CaseStudy = ({item}) => {
                     </VertCenter>
                 </GridBox>
 
-                <SecTitle>Next Steps</SecTitle>
-                <P>We will choose one of three design ideas and create a detailed interactive prototype of the interface.  Based on research and processes of designing the system, we will then come up with criteria by which our interface can be evaluated in order to eventually perform a formal evaluation.</P>
+                <SecTitle>Evaluation of Design Concepts</SecTitle>
+                <GridBox>
+                    <VertCenter>
+                        <p>Out of the three designs created, we decided to move forward with the <St>Smart Scheduler digital wall calendar </St> . This was based on our own analysis of the three systems as well as semi-structured interviews with stay-at-home parents.  During interview parents remarked that they cannot access paper calendars them when they are out of the house and even when they are in the house, paper-based methods have no form of alerts. In addition parents within a single household don’t always both use the paper-based calendar leading to miscommunication. In addition, a majority of the parents interviewed liked the Smart Scheduler because it is “in your face” versus mobile calendar reminders that are easy to miss or ignore. Because the system is on the wall but has the capabilities of a traditional mobile calendar, parents said that they were more likely to check it.  </p>
+                    </VertCenter>
+                    <div>
+                        <I>“I end up using my phone’s calendar a lot. I get notifications that pop up but I don’t look at them. I don’t check my calendar that often. But if it's there on the wall I would check it more often.”</I>
+                        <I>“I love the post-its [on the Smart Scheduler] because it reflects how I currently manage my time.” </I>
+                        <I>“I don’t like to have to open up an app and type in it vs being able to write in it. It feels like you almost don’t have to even think as much.” </I>
+                        <I>“When you forget stuff and are not efficient, it creates stress. You end up doubling up on efforts.” </I>
+                    </div>
+                </GridBox>
 
+
+                <SecTitle>System Design & Prototype</SecTitle>
+                
+                <GridBox>
+                    <VertCenter>
+                        <SubTitle>Systems Map</SubTitle>
+                        <ImageZoom
+                            image={{
+                                src: systemsMap,
+                                alt: 'systems map for prototype',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: systemsMap,
+                                alt: 'systems map for prototype'
+                            }}
+                        />
+                    </VertCenter>
+                    <VertCenter>
+                        <P>The Systems Map gives us a good idea about the number and type of stakeholders involved in order to make the system robust. It reflects the numerous interactions that take place between the stakeholders in order to enable a smoothly functioning system. Making the system’s map helped us identify the design gaps in our system. (For eg. How will the system be mounted on the wall). It greatly helped us to think about all aspects of the system as a whole which led us to make a robust system. </P>
+                    </VertCenter>
+                </GridBox>
+                <br />
+                <SubTitle>Prototype Design</SubTitle>
+                <GridBox>
+                    <VertCenter>
+                    <BTitle>The following are six key features of the Smart Scheduler:</BTitle>
+                    <ol>
+                        <li>Daily schedule view</li>
+                        <li>Weekly schedule preview</li>
+                        <li>Scheduling events</li>
+                        <li>Expandable footer
+                        <ul>
+                                <li>Monthly calendar</li>
+                                <li>Analytics dashboard</li>
+                                <li>Activity Suggestions</li>
+                                <li>Motto of the month</li>
+                            </ul>
+                        </li>
+                        <li>Mobile app</li>
+                        <li>Settings</li>
+                    </ol>
+                    </VertCenter>
+                    <VertCenter>
+
+                        <ImageZoom
+                            image={{
+                                src: mobileApp,
+                                alt: 'mobile app for prototype',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: mobileApp,
+                                alt: 'mobile app for prototype'
+                            }}
+                        />
+                    </VertCenter>
+                </GridBox>
+                <br/>
+                <SubTitle>Prototype Walkthrough</SubTitle>
+
+                <Carousel wrapAround ={true} 
+                renderBottomCenterControls={null}>
+                    <img src={slide0} />
+                    <img src={slide1} />
+                    <img src={slide2} />
+                    <img src={slide3} />
+                    <img src={slide4} />
+                    <img src={slide5} />
+                    <img src={slide6} />
+                    <img src={slide7} />
+                    <img src={slide8} />
+                    <img src={slide9} />
+                    <img src={slide10} />
+                </Carousel>
+
+                <SubTitle>Interactive Prototype</SubTitle>
+                <Frame>
+                    <iframe src="https://xd.adobe.com/embed/87402818-88fe-4ce2-7a58-a74fb92a99a6-f171/" frameborder="1" class="ui-droppable"></iframe>
+                </Frame>
+
+                <SecTitle>Evaluation of Prototype</SecTitle>
+                <GridBox>
+                    <div>
+                        <P>We conducted moderated usability testing by giving 6 participants the following 2 tasks:</P>
+                        <ol>
+                            <li>Add and delete a task on the Smart Scheduler.</li>
+                            <li>View and interpret the footer & expanded self-care graphs.</li>
+                        </ol>          
+                        <P>Our system was tested through paper prototyping to quickly obtain feedback. We printed key screens of the interface on large sheets of paper to accurately represent the size of the system and used sticky notes for user take notes on and place into a timeslot. The screens were then placed on the wall to simulate a realistic interaction with the system. We  switched paper components in order to show changes in the interface’s state. </P>          
+                    </div>
+                    <VertCenter>
+
+                        <ImageZoom
+                            image={{
+                                src: analytics,
+                                alt: 'analytics dashboard',
+                                style: { width: '100%' }
+                            }}
+                            zoomImage={{
+                                src: analytics,
+                                alt: 'analytics dashboard'
+                            }}
+                        />
+                    </VertCenter>
+                </GridBox>
+
+                <SubTitle>Semi-structured Interview/ Think Aloud</SubTitle>
+                <GridBox>
+                    <div>
+                        <BTitle> Description </BTitle>
+                        <P>Our questions were spaced throughout the evaluation of the two benchmark tasks and can be broken down into the following groups:</P>
+                        <ol>
+                            <li>Initial questions to gain general information about the user</li>
+                            <li>Questions about impression of system after its introduction</li>
+                            <li>Follow-up questions after completion of first evaluation task</li>
+                            <li>Follow-up questions after completion of second evaluation task</li>
+                            <li>Final questions to understand overall experience of the user</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <BTitle> Findings </BTitle>
+                        <ol>
+                            <li>This system is better than existing processes users use to schedule things.</li>
+                            <li>Existing features of the system make scheduling more efficient.</li>
+                            <li>The system is useful because of its ubiquity.</li>
+                            <li>Some parts of the system are tedious.</li>
+                            <li>This system will allow the users to save time.</li>
+                            <li>The self-care graphs are useful but the graphs do not function how users expect them to.</li>
+                        </ol>
+                    </div>
+                </GridBox>
+
+                <SubTitle>Desirability Testing</SubTitle>
+                <GridBox>
+                    <div>
+                        <BTitle> Description </BTitle>
+                        <P>Following the completion of the benchmark tasks users selected 5-10 words that most aligned with their perceptions / experiences.</P>
+                    </div>
+                    <div>
+                        <BTitle> Findings </BTitle>
+                        <P>Most selected adjectives:</P>
+                        <ol>
+                            <li>Organized - 5</li>
+                            <li>Personal - 4</li>
+                            <li>Convenient - 4</li>
+                        </ol>
+                    </div>
+                </GridBox>
+
+                <SubTitle>System Usability Scale (SUS)</SubTitle>
+                <GridBox>
+                    <div>
+                        <BTitle> Description </BTitle>
+                        <P>At the end of each session each user filled out the 10 standard questions used within SUS via google forms.</P>
+                    </div>
+                    <div>
+                        <BTitle> Findings </BTitle>
+                        <P>Average score: 83.8</P>
+                    </div>
+                </GridBox>
+
+                <SecTitle>Project Reflection</SecTitle>
+                <P>The evaluation yielded helpful insights relating to  our design and usability objectives. It was especially interesting to learn how some features that we thought were the essence of the system (the self-care graphs, specifically) were often seen as secondary functionalities by the users.  Throughout the entire project, we allowed the data gathered from our target users to direct our design decisions. We developed detailed knowledge of how our target users schedule events in their lives and have iteratively improved upon the system designed with them in mind. Had we continued with this project further, we would have been able to complete further user research of interviews and implement successive design changes in order to make the Smart Scheduler even more efficient and effective for our users. </P>
+                <P>It was sometimes challenging to have access to individuals within our target user group (stay-at-home parents) considering the significant quantity of user research conducted  throughout this project. Despite many participants eagerness to participate, it is sometimes simply difficult to coordinate schedules with busy parents under tight time constraints. Another challenge was really the limitation of testing this system in a more realistic, long-term way. We would have loved to have enough time to conduct a longitudinal study with participants considering that understanding a long-term relationship between the system and participants is a crucial aspect of evaluating its effectiveness in achieving its goal.  </P>
+
+               
         </GridContainer>
     </Container>
     );
@@ -301,8 +491,36 @@ let BTitle = styled.p`
     font-size: 18px;
     font-weight: 600;
 `;
+let Frame = styled.div`
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 85%;
+    background: #F4F9F8;
+    iframe {
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        
+    }
+`;
+let St = styled.span`
+    font-weight: 600;
+`;
 let P = styled.p`
     font-size: 1.7rem;
+`;
+let I = styled.p`
+    font-style: italic;
+    font-size: 1.65rem;
 `;
 
 let Img = styled.img`

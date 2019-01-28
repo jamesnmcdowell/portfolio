@@ -15,6 +15,12 @@ import personaAlex from '../assets/Persona-Alex.jpg';
 import personaOlivia from '../assets/Persona-Olivia.jpg';
 import journeyAlex from '../assets/userjourney-alex.jpg';
 import journeyOlivia from '../assets/userjourney-olivia.jpg';
+import website from '../assets/website-wireframe.jpg';
+import voice from '../assets/voice-assistant-map.jpg';
+import chatbot from '../assets/chatbot.jpg';
+import prototype  from '../assets/prototype-ordering.jpg';
+import cw from '../assets/cognitive-walkthrough.jpg';
+import interviewing from '../assets/interviewing.jpg';
 
 
 let CaseStudy2 = ({ item }) => {
@@ -196,11 +202,198 @@ let CaseStudy2 = ({ item }) => {
                         />
                     </div>
                 </GridBox>
-                
+
+                <SecTitle>Design Concepts</SecTitle>
+				<p>During the design phase, we strived to incorporate insights into the design of the ordering process in order to create robust, accessible interfaces. We began this phase of the project by brainstorming three design concepts for online ordering.</p>
 
 
-                <SecTitle>Next Steps</SecTitle>
-                <P>Equipped with the findings derived from our research, we will iteratively design and prototype Schlotzsky’s online ordering platform. We will then perform evaluative testing with the new online platform and compare the results with the initial platform to evaluate relative performance.  In addition to automated accessibility testing, we intend to reach out to several users with vision impairments in order to test usability of the new, accessible ordering platform.</P>
+				<GridBox>
+					<div>
+						<BTitle>Concept #1: Website</BTitle>
+						<P>In order to faithfully validate the accessibility of the website’s ordering process, it is essential to have fine-grained control over the code because this is is how how the interface communicates with screen readers. Therefore we opted to immediately code a barebones working prototype using web technologies to gain valuable insights from our users.</P>
+					</div>
+					<div>
+						<ImageZoom
+							image={{
+								src: website,
+								alt: 'website wireframe',
+								style: { width: '100%' }
+							}}
+							zoomImage={{
+								src: website,
+								alt: 'website wireframe'
+							}}
+						/>
+					</div>
+				</GridBox>
+				<br/>
+
+				<GridBox>
+					<div>
+						<BTitle>Concept #2: Chatbot</BTitle>
+						<P>Chatbots have a great potential of being accessible interfaces because users with vision impairments can easily carry out a text conversation with a screen reader and navigate through/ select given options presented by a chatbot. </P>
+					</div>
+					<div>
+						<ImageZoom
+							image={{
+								src: chatbot,
+								alt: 'chatbot concept',
+								style: { width: '100%' }
+							}}
+							zoomImage={{
+								src: chatbot,
+								alt: 'chatbot concept'
+							}}
+						/>
+					</div>
+				</GridBox>
+				<br />
+
+
+				<GridBox>
+					<div>
+						<BTitle>Concept #3: Voice Interface</BTitle>
+						<P>We chose the voice interface as a design alternative from our pool of brainstormed ideas because it is accessible for those with or without vision impairments. Moreover, owing to its conversational nature, we hypothesized that customers would find it usable as it would feel similar to talking to a waiter at a restaurant. </P>
+					</div>
+					<div>
+						<ImageZoom
+							image={{
+								src: voice,
+								alt: 'voice concept',
+								style: { width: '100%' }
+							}}
+							zoomImage={{
+								src: voice,
+								alt: 'voice concept'
+							}}
+						/>
+					</div>
+				</GridBox>
+
+		
+				
+
+				
+
+                <SubTitle> Concept Evaluation & Findings  </SubTitle>
+                <P>We took feedback from our participants and continually iterated on our design, which was critical because of our initial lack of practical understanding of people with visual impairments and how they may interact with our interfaces.  We used the Wizard of Oz method to simulate the chatbot and voice interface. To test the website, we developed a prototype using a web-application framework, React.js, to quickly and accurately test the accessibility of the website with a screen reader.</P>
+               
+
+				<SecTitle>Final Prototype Design & Evaluation </SecTitle> 
+
+				<GridBox>
+					<div>
+
+						<ImageZoom
+							image={{
+								src: prototype,
+								alt: 'website prototype',
+								style: { width: '100%' }
+							}}
+							zoomImage={{
+								src: prototype,
+								alt: 'website prototype'
+							}}
+						/>
+					</div>
+					<div>
+						<p>We moved forward to the next phase with the website concept. We incorporated previous research findings and expanded upon its features for the final evaluation sessions. We conducted a total of nine evaluation sessions with three experts and six users.</p>
+						<br/>
+						<Button target="_blank" href="https://order-accessible.netlify.com/#/">
+							<span>View Prototype</span>
+						</Button>
+					</div>
+				</GridBox>
+				<br/>
+				<GridBox>
+					<div>
+						<SubTitle>Cognitive Walkthrough</SubTitle>
+						<P>Our goal for the cognitive walkthrough was to understand the user’s expectations and information needs while ordering online from Schlotzsky’s specifically in regards to accessibility. Conducting cognitive walkthroughs also gave us a clear understanding about users’ considerations as they go through the entire online ordering process. </P>
+						<SubTitle>Heuristic Evaluation</SubTitle>
+						<P>Our goal with heuristic evaluation is to ensure that our design meets holistic usability standards. We decided to use heuristic evaluation with our usability experts because it would provide feedback on a number of aspects of our design in one feedback session. Additionally, the heuristics provided us with a framework with which we could discuss our design and references with the expert. </P>
+
+					</div>
+					<div>
+						<ImageZoom
+							image={{
+								src: cw,
+								alt: 'cognitive walkthrough with a visually impaired expert',
+								style: { width: '100%' }
+							}}
+							zoomImage={{
+								src: cw,
+								alt: 'cognitive walkthrough with a visually impaired expert'
+							}}
+						/>
+					</div>
+				</GridBox>
+
+				<SubTitle>Interviewing / Think Aloud Testing</SubTitle>
+				<GridBox>
+					<div>
+						<P>The goal of this user research method was to gain insights into the strengths and weaknesses of the interface from the perspective of a consumer. It was also critical to gain insights into how the screen reader worked in practice on participants’ with visual impairments own computers to identify any technical issues with the code. In addition, we asked more general questions about users’ online ordering preferences and habits to help us develop a baseline to understand their experience with and perception of online ordering platforms in general. We decided to pair Interviewing with think aloud testing to help fill in the gap of what the users experience throughout the ordering process. </P>
+					</div>
+					<div>
+						<ImageZoom
+							image={{
+								src: interviewing,
+								alt: 'interviewing a user',
+								style: { width: '100%' }
+							}}
+							zoomImage={{
+								src: interviewing,
+								alt: 'interviewing a user'
+							}}
+						/>
+					</div>
+				</GridBox>
+				<SubTitle>Benchmark Testing </SubTitle>
+				<p>Our goal for benchmark testing was to compare how accessible our design is compared to one of Schlotzsky’s competitors, Hopdoddy. We chose Hopdoddy because their website was found to be the most accessible by automated testing tools during our competitive analysis of five Schlotzsky’s competitors that we previously conducted. Because we gave users the same basic task on each website (ordering an item for lunch online), we were able to see parallels and differences between the online ordering processes. We were able to see how the two websites differed in terms of how well screen readers navigated pages, links, and other web components. </p>
+				
+				<SubTitle>System Usability Scale (SUS) </SubTitle>
+				<p>Our goal for using SUS was to obtain a baseline score of the usability of our prototype. We choose to evaluate the system with SUS because it a quick, convenient statistically-proven way to gain a sense of usability. SUS is also quite flexible because the 10 questions are able to evaluate anything from a traditional website interface to a experimental interface.  </p>
+				
+				<SecTitle>Research Findings from Evaluation </SecTitle> 
+				<p> </p>
+
+				<SubTitle>Cognitive Walkthrough</SubTitle>
+				<p>From our cognitive walkthroughs, we found that our website met overarching accessibility goals in that it is easily navigable by a variety of screen readers (it’s operable, robust) and that it is predictable and understandable in terms of language and overall structure (understandable and perceivable). </p>
+
+				<SubTitle>Heuristic Evaluation</SubTitle>
+				<p>We incorporated the following changes to our prototype based on the expert’s feedback, and the team’s discussion. </p>
+				<ul>
+					<li>Added feature for ‘Website Feedback’ at the end of the home page</li>
+					<li>Displayed an empty cart from the initial phase of the ordering process for consistency. The cart then fills up as the user adds items. </li>
+					<li>Removed the Promo picture from the home page to avoid distraction </li>
+					<li>Added Favorites option to save the item for later.  </li>
+				</ul>
+
+				<SubTitle>Interviewing / Think Aloud Testing</SubTitle>
+				<ul>
+					<li>The website was intuitive and easy to use.</li>
+					<li>Navigation through the website is intuitive and guided.</li>
+					<li>The summaries provided throughout the website are helpful.</li>
+					<li>I like images and colors to supplement information shown in text.</li>
+					<li>The system should save payment information.</li>
+					<li>Parts of customization and checkout were tedious.</li>
+				</ul>
+
+				<SubTitle>Benchmark Testing</SubTitle>
+				<ul>
+					<li>Users prefer seeing all important details of a dish upfront (price, ingredients, dietary restrictions, etc.) as displayed in our design.</li>
+					<li>Important interface elements should not be hidden inside menus because they are inaccessible for users with or without screen readers.</li>
+					<li>We should incorporate personal touches like emotive language and suggestions because they draw users in.</li>
+					<li>Users need feedback for actions that they have taken and how to navigate throughout a website. We have achieved this in our design.</li>
+					<li>Users find it helpful to be guided through the ordering process by the design itself.</li>
+					<li>Users find the options to customize pickup time and date and to add custom notes to a dish helpful.</li>
+				</ul>
+
+				<SubTitle>System Usability Scale (SUS)</SubTitle>
+				<BTitle>Average score: 90.83 </BTitle>
+								
+				<SecTitle>Project Reflection </SecTitle>
+				<p>This was overall an extremely ambitious and rewarding project. Entering into the area of accessible design initially feels nearly overwhelming due to the complexities that exist within this set of users that most designers don’t really understand. The challenge of this project, however, is what largely contributed to what made it so exciting to work on.  Due to the poor state of accessible design within food ordering platforms and the digital space at large, we were able to make a large impact within this space and create experiences for users that were superior to their typical alternatives.  </p>
+				<p>It was surprising to me that accessible-first design really helped me focus on the information architecture more acutely without becoming distracted too early by visual design due to the fact that screen readers require no visual design whatsoever. From the perspective of development, it was definitely a challenge challenge due to the  fact that users can choose from  a variety screen readers running on a variety of operating systems and web browsers.</p>
 
             </GridContainer>
         </Container>
@@ -276,4 +469,19 @@ let SubTitle = styled.h3`
     font-size:2.7rem;
     `}
    
+`;
+
+let Button = styled.a`
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border: 5px solid #1B67AB;
+    padding: 1rem;
+    &:hover {
+        background-color: #1B67AB;
+        color: white;
+    }
+    span {
+        text-transform: uppercase;
+    }
 `;
