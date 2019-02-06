@@ -27,7 +27,6 @@ let Footer = () =>
 export default Footer;
 
 let FooterStyled = styled.footer`
-    border-top: 1px solid #f0f0f0;
     width:100%;
     padding: 1.5em 0;  
 `;

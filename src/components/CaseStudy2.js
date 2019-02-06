@@ -313,7 +313,7 @@ let CaseStudy2 = ({ item }) => {
 						<P>Our goal with heuristic evaluation is to ensure that our design meets holistic usability standards. We decided to use heuristic evaluation with our usability experts because it would provide feedback on a number of aspects of our design in one feedback session. Additionally, the heuristics provided us with a framework with which we could discuss our design and references with the expert. </P>
 
 					</div>
-					<div>
+					<VertCenter>
 						<ImageZoom
 							image={{
 								src: cw,
@@ -325,7 +325,7 @@ let CaseStudy2 = ({ item }) => {
 								alt: 'cognitive walkthrough with a visually impaired expert'
 							}}
 						/>
-					</div>
+					</VertCenter>
 				</GridBox>
 
 				<SubTitle>Interviewing / Think Aloud Testing</SubTitle>
@@ -333,7 +333,7 @@ let CaseStudy2 = ({ item }) => {
 					<div>
 						<P>The goal of this user research method was to gain insights into the strengths and weaknesses of the interface from the perspective of a consumer. It was also critical to gain insights into how the screen reader worked in practice on participants’ with visual impairments own computers to identify any technical issues with the code. In addition, we asked more general questions about users’ online ordering preferences and habits to help us develop a baseline to understand their experience with and perception of online ordering platforms in general. We decided to pair Interviewing with think aloud testing to help fill in the gap of what the users experience throughout the ordering process. </P>
 					</div>
-					<div>
+					<VertCenter>
 						<ImageZoom
 							image={{
 								src: interviewing,
@@ -345,7 +345,7 @@ let CaseStudy2 = ({ item }) => {
 								alt: 'interviewing a user'
 							}}
 						/>
-					</div>
+					</VertCenter>
 				</GridBox>
 				<SubTitle>Benchmark Testing </SubTitle>
 				<p>Our goal for benchmark testing was to compare how accessible our design is compared to one of Schlotzsky’s competitors, Hopdoddy. We chose Hopdoddy because their website was found to be the most accessible by automated testing tools during our competitive analysis of five Schlotzsky’s competitors that we previously conducted. Because we gave users the same basic task on each website (ordering an item for lunch online), we were able to see parallels and differences between the online ordering processes. We were able to see how the two websites differed in terms of how well screen readers navigated pages, links, and other web components. </p>
