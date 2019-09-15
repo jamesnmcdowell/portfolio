@@ -62,23 +62,23 @@
             "items": [
                 {
                     "name": [
+                        "UX Designer | Hewlett Packard Enterprise (HPE)"
+                    ],
+                    "date": "5/2019 - 8/2019 | Fort Collins, CO",
+                    "text": "Worked on both research and design efforts within the Chief Design Office (CDO)",
+                    "arrayType": "bullet",
+                    "textArray": [
+                        "Developed and formalized research practice and processes",
+                        "Conducted, collected, and synthesized research data into share-outs",
+                        "Designer on GreenLake Hybrid Cloud team during transition to as a Service (aaS)"
+                    ]
+                },
+                {
+                    "name": [
                         "Graduate Research Assistant | Georgia Tech"
                     ],
                     "date": "1/2019 - Present | Atlanta, GA",
                     "text": "Design & Development of digital platform to assist learners and teachers of Persian language"
-                },
-                {
-                    "name": [
-                        "Front-end Developer & Designer | Freelance"
-                    ],
-                    "date": "9/2016 - 08/2018 | Atlanta, GA",
-                    "text": "Designed and developed responsive websites using HTML, CSS, and JavaScript",
-                    "arrayType": "bullet",
-                    "textArray": [
-                        "Conducted competitive analysis and developed brand identity",
-                        "Information architecture and wireframes for websites",
-                        "Developed using React /vanilla JavaScript and CSS Flexbox/ Grid"
-                    ]
                 },
                 {
                     "name": [

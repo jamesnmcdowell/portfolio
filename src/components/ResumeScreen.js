@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { resume } from '../db.json';
 import ResumeBlock from './ResumeBlock';
 import { media, Container, Container2 } from './Media';
-import resumePDF from '../assets/McDowell_James.pdf';
+import resumePDF from '../assets/JMcDowell_2019.pdf';
 
 // import employment from '../assets/employment.svg';
 // import education from '../assets/education.svg';
