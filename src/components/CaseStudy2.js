@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { media, Container, ContainerV } from './Media';
 import { withRouteData } from 'react-static';
 import ImageZoom from 'react-medium-image-zoom';
-
+import ixda from '../assets/talk_idxa.jpeg';
 import schlotzkysLogo from '../assets/schlotzkys-title-narrow.png';
 import taskAnalysis from '../assets/TA_final.png';
 import affinityWall from '../assets/affinity-wall-r2.jpg';
@@ -28,6 +28,7 @@ let CaseStudy2 = ({ item }) => {
         <Container vert>
             <GridContainer>
                 <MainTitle>{item.title}</MainTitle>
+                <BTitleA> *Presented at 2019 World Information Architecture Day in Atlanta </BTitleA>
                 <SecTitle>Overview </SecTitle>
                 <GridBox>
                     <div>
@@ -36,16 +37,15 @@ let CaseStudy2 = ({ item }) => {
 
                         <SubTitle>Users</SubTitle>
                         <P>The target user is anyone who is interested in ordering Schlotzsky's online through a desktop or mobile interface.</P>
-                    </div>
-                    <div>
-                        <Img src={schlotzkysLogo} />
-                        
                         <SubTitle>Logistics</SubTitle>
                         <ul>
                             <li><strong>Duration:</strong> August 2018 - Present</li>
                             <li><strong>The Team:</strong> James, Rishma, Shubhangi {"&"} Tanuja</li>
                             <li><strong>My Role:</strong> Inteviewing, Sketching, Low and High-Fidelity Protoype Design, Report Writing</li>
                         </ul>
+                    </div>
+                    <div>
+                        <Img src={ixda} />
                     </div>
                 </GridBox>
 
@@ -484,4 +484,10 @@ let Button = styled.a`
     span {
         text-transform: uppercase;
     }
+`;
+
+let BTitleA = styled.p`
+    font-size: 18px;
+    font-weight: 600;
+    color: #C21717;
 `;

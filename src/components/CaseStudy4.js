@@ -47,9 +47,9 @@ let CaseStudy4 = ({ item }) => {
                             }}
                         />
                         <Center>
-                        <Button target="_blank" href="http://farm-fresh-app.herokuapp.com/#/">
-                            <span>View Site</span>
-                        </Button>
+                            <Button target="_blank" href="http://farm-fresh-app.herokuapp.com/#/">
+                                <span>View Site</span>
+                            </Button>
                         </Center>
                         <SubTitle>Logistics</SubTitle>
                         <ul>
@@ -181,8 +181,6 @@ let SubTitle = styled.h3`
     `}
    
 `;
-
-
 
 let Button = styled.a`
     text-align: center;
