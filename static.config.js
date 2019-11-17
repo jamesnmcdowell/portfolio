@@ -40,6 +40,10 @@ export default {
         component: 'src/components/ResumeScreen',
       },
       {
+        path: '/researchproject',
+        component: 'src/components/ResearchStudy',
+      },
+      {
         path: '404',
         component: 'src/components/404',
       },
