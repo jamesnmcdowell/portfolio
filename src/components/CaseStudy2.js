@@ -39,7 +39,7 @@ let CaseStudy2 = ({ item }) => {
                         <P>The target user is anyone who is interested in ordering Schlotzsky's online through a desktop or mobile interface.</P>
                         <SubTitle>Logistics</SubTitle>
                         <ul>
-                            <li><strong>Duration:</strong> August 2018 - Present</li>
+                            <li><strong>Duration:</strong> August 2018 - December 2018</li>
                             <li><strong>The Team:</strong> James, Rishma, Shubhangi {"&"} Tanuja</li>
                             <li><strong>My Role:</strong> Inteviewing, Sketching, Low and High-Fidelity Protoype Design, Report Writing</li>
                         </ul>

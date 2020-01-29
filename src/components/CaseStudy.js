@@ -48,7 +48,7 @@ let CaseStudy = ({item}) => {
                         <P>The target user group is stay-at-home parents (SAHP) in the United States who have minor children living at home with them.</P> 
                         <SubTitle>Logistics</SubTitle>
                         <ul>
-                            <li><strong>Duration:</strong> August 2018 - Present</li>
+                            <li><strong>Duration:</strong> August 2018 - December 2018</li>
                             <li><strong>The Team:</strong> James, Rishma, Shubhangi {"&"} Tanuja</li>
                             <li><strong>My Role:</strong> Inteviewing, Sketching, Low and High-Fidelity Protoype Design, Report Writing</li>
                         </ul>
@@ -368,7 +368,7 @@ let CaseStudy = ({item}) => {
                 <SubTitle>Prototype Walkthrough</SubTitle>
 
                 <Carousel wrapAround ={true} 
-                renderBottomCenterControls={null}>
+                    renderBottomCenterControls={null} dragging >
                     <img src={slide0} />
                     <img src={slide1} />
                     <img src={slide2} />
@@ -380,13 +380,17 @@ let CaseStudy = ({item}) => {
                     <img src={slide8} />
                     <img src={slide9} />
                     <img src={slide10} />
+                
                 </Carousel>
-
-                <SubTitle>Interactive Prototype</SubTitle>
-                <Frame>
-                    <iframe src="https://xd.adobe.com/embed/87402818-88fe-4ce2-7a58-a74fb92a99a6-f171/" frameborder="1" class="ui-droppable"></iframe>
-                </Frame>
-
+                <br />
+                <br />
+                <Button target="_blank" href="https://xd.adobe.com/embed/87402818-88fe-4ce2-7a58-a74fb92a99a6-f171/">
+                    <span>View Interactive Prototype</span>
+                </Button>
+                <br />
+                <br />
+                <br />
+                
                 <SecTitle>Evaluation of Prototype</SecTitle>
                 <GridBox>
                     <div>
@@ -521,6 +525,21 @@ let P = styled.p`
 let I = styled.p`
     font-style: italic;
     font-size: 1.65rem;
+`;
+
+let Button = styled.a`
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border: 5px solid #1B67AB;
+    padding: 1rem;
+    &:hover {
+        background-color: #1B67AB;
+        color: white;
+    }
+    span {
+        text-transform: uppercase;
+    }
 `;
 
 let Img = styled.img`
