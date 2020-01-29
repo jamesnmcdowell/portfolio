@@ -59,7 +59,7 @@ let CaseStudy3 = ({ item }) => {
                     <div>
                         <SubTitle>Logistics</SubTitle>
                         <ul>
-                            <li><strong>Duration:</strong> August 2018 - Present</li>
+                            <li><strong>Duration:</strong> August 2018 - December 2018</li>
                             <li><strong>The Team:</strong> James, Julia, Sijia {"&"} Bryan</li>
                             <li><strong>My Role:</strong> D3.js, Sketching, Low and High-Fidelity Protoype Design, Report Writing</li>
                         </ul>

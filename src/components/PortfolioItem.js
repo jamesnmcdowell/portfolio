@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import { media, Container, ContainerV } from './Media';
 
 let colorKeys = {
-    "UX Research": "#1B67AB",
-    "UX Design": "#F1E639",
+    "Research": "#1B67AB",
+    "Design": "#F1E639",
     "Development": "#D0021B",
 
 }

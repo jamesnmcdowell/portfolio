@@ -4,8 +4,8 @@
             {
                 "title": "Accessible Ordering",
                 "category": [
-                    "UX Research",
-                    "UX Design",
+                    "Research",
+                    "Design",
                     "Development"
                 ],
                 "description": "Project with Schlotzsky's to improve their ordering platform with accessibility in mind.",
@@ -15,16 +15,25 @@
             },
             {
                 "title": "SmartScheduler",
-                "category": ["UX Research", "UX Design" ],
-                "description":"Enabling stay-at-home parents to manage their time so that they have more time for themselves",
+                "category": ["Research", "Design" ],
+                "description":"Enabling stay-at-home parents to manage their time so that they have more time for themselves.",
                 "image": "research-design.svg",
                 "slug": "smart-scheduler",
                 "component": "CaseStudy"
             },
-           
+            {
+                "title": "Toll of Tech",
+                "category": [
+                    "Design"
+                ],
+                "description": "Branding guidelines for a nonprofit concept that critically examines technology's role in our lives.",
+                "image": "design.svg",
+                "slug": "tolloftech",
+                "component": "CaseStudy7"
+            },
             {
                 "title": "Dengue Fever Viz",
-                "category": ["UX Design", "Development"],
+                "category": ["Design", "Development"],
                 "description": "Interactive visualizations exploring the relationship between climate related variables and outbreaks. ",
                 "image": "design-dev.svg",
                 "slug": "dengue-visualization",
@@ -32,7 +41,7 @@
             },
             {
                 "title": "FarmFresh",
-                "category": ["UX Design", "Development"],
+                "category": ["Design", "Development"],
                 "description": "Empowering local farmers to connect directly with customers on their own terms.",
                 "image": "design-dev.svg",
                 "slug": "farmfresh",
@@ -40,20 +49,13 @@
             },
             {
                 "title": "FoodStash",
-                "category": ["UX Design", "Development"],
+                "category": ["Design", "Development"],
                 "description": "A robust platform for recording, preserving, sharing, and collaborating on recipes.",
                 "image": "design-dev.svg",
                 "slug": "foodstash",
                 "component": "CaseStudy5"
-            },
-            {
-                "title": "Llama Programma",
-                "category": ["Development"],
-                "description": "A simple ecommerce website dedicated to Llamas. It was pretty fun finding llama pictures.",
-                "image": "dev.svg",
-                "slug": "llama",
-                "component": "CaseStudy6"
             }
+          
         ]
     },
     "resume": {
@@ -141,7 +143,7 @@
                         "Accessible Ordering"
                     ],
                     "date": "8/2018 - 12/2018",
-                    "text": "UX research, design, and development project in collaboration with Schlotzsky's to improve their ordering platform with accessibility in mind.",
+                    "text": "research, design, and development project in collaboration with Schlotzsky's to improve their ordering platform with accessibility in mind.",
                     "textArray": []
                 },
                 {
@@ -149,7 +151,7 @@
                         "SmartScheduler"
                     ],
                     "date": "8/2018 - 12/2018",
-                    "text": "UX research and design semester project at Georgia Tech that involved coming up with solutions to enable stay-at-home parents to manage their time more effectively so that they have more time for themselves.",
+                    "text": "research and design semester project at Georgia Tech that involved coming up with solutions to enable stay-at-home parents to manage their time more effectively so that they have more time for themselves.",
                     "textArray": []
                 }
             ]
