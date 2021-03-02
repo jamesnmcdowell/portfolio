@@ -2,6 +2,7 @@
 .responsiveTable {
   width: 100%;
   border-spacing: 0;
+  text-align: left;
 }
 
 .responsiveTable td .tdBefore {
@@ -12,9 +13,6 @@
     border-bottom: 1px solid #ccc;
     padding: .75em .2em;
 
-}
-.responsiveTable tr:first-child {
-    padding-right: 1.5em;
 }
 
 
