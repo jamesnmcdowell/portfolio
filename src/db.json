@@ -2,6 +2,17 @@
     "portfolioItems": {
         "item": [
             {
+                "title": "Family OS",
+                "category": [
+                    "Research",
+                    "Design"
+                ],
+                "description": "A mobile platform for improving the lives of older adults, aging in place, and their caregivers.",
+                "image": "research-design.svg",
+                "slug": "familyos",
+                "component": "CaseStudy8"
+            },
+            {
                 "title": "Accessible Ordering",
                 "category": [
                     "Research",
@@ -46,14 +57,6 @@
                 "image": "design-dev.svg",
                 "slug": "farmfresh",
                 "component": "CaseStudy4"
-            },
-            {
-                "title": "FoodStash",
-                "category": ["Design", "Development"],
-                "description": "A robust platform for recording, preserving, sharing, and collaborating on recipes.",
-                "image": "design-dev.svg",
-                "slug": "foodstash",
-                "component": "CaseStudy5"
             }
           
         ]
@@ -138,6 +141,14 @@
         "projects": {
             "section": "SELECTED PROJECTS",
             "items": [
+                {
+                    "name": [
+                        "Family OS"
+                    ],
+                    "date": "9/2019 - 4/2020",
+                    "text": "Master's project with the goal of improving the lives of older adults, aging in place, and their caregivers..",
+                    "textArray": []
+                },
                 {
                     "name": [
                         "Accessible Ordering"

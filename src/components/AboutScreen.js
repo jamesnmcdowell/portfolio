@@ -12,7 +12,7 @@ let AboutScreen = () =>
       <Img src={jamesProfile} />
       <div>
         <Title>Who I am </Title>
-        <Text>I am a naturally curious person. I’ve always felt driven to understand the core of what binds us together as human beings. I’ve always hesitated to limit myself into one specific discipline in life and believe that possessing a strong interdisciplinary background is necessary to understand our world’s greatest challenges, let alone solve them. I have a background in applied linguistics, German, Persian, Russian, cultural studies, international affairs, web development, user research, and design. I  am currently pursuing a master’s in Human Computer Interaction at the <A target="_blank" href="http://mshci.gatech.edu/"> Georgia Institute of Technology </A>.</Text>
+        <Text>I am a naturally curious person. I’ve always felt driven to understand the core of what binds us together as human beings. I’ve always hesitated to limit myself into one specific discipline in life and believe that possessing a strong interdisciplinary background is necessary to understand our world’s greatest challenges, let alone solve them. I have a background in applied linguistics, German, Persian, Russian, cultural studies, international affairs, web development, user research, and design. I have a master’s in Human Computer Interaction from the <A target="_blank" href="http://mshci.gatech.edu/"> Georgia Institute of Technology </A>.</Text>
       </div>
     </GridContainer>
       <Title>Design Inspiration </Title>
