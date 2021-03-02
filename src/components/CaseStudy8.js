@@ -72,28 +72,6 @@ let CaseStudy8 = ({ item }) => {
             
                 <SubTitle>Interviewing</SubTitle>
                 <P>Interviewing was  chosen as a research method for gathering  rich, qualitative data to better understand how the target users connect with others through technology and the subtle details within the caregiver/ care-receiver relationship. A total of 18 people were interviewed. All participants also partook in the survey prior to the interview and successfully met the requirements for all of the included qualifying questions.</P>
-                <GridBox>
-                    <div>
-                        <P>The survey for <strong>care-receivers</strong> ended up containing five general sections: </P> 
-                        <ol>
-                            <li>General and social information</li>
-                            <li>Tech accessibility/ adoption of technology</li>
-                            <li>Spectrum of technology use</li>
-                            <li>Relationship with technology</li>
-                            <li>Effects of relationship with technology on relationship with people</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <P>The survey for <strong>caregivers</strong> ended up containing five general sections: </P>
-                        <ol>
-                            <li>General and social information</li>
-                            <li>Spectrum of technology use</li>
-                            <li>Relationship with technology</li>
-                            <li>Effects of relationship with technology on relationship with people</li>
-                        </ol>
-                    </div>
-                </GridBox>
-
                 <SubTitle>Research Findings</SubTitle>
                 <Table>
                     <Thead>
@@ -334,40 +312,44 @@ let CaseStudy8 = ({ item }) => {
 
                 <br />
                 <SecTitle>Prototype Evaluation </SecTitle>
-
-                <Button target="_blank" href="https://james122277.invisionapp.com/console/share/F513RAMORN">
-                    <span>View care-receiver prototype</span>
-                </Button>
-                <br/>
-                <br/>
-                <br/>
-                <Button target="_blank" href="https://james122277.invisionapp.com/console/share/AV13R7KOH8">
-                    <span>View caregivers prototype</span>
-                </Button>
-                <br />
-                <br />
                 <BTitle> Evaluation Overview </BTitle>
-                <ol>
-                    <li>Introduction/overview of the system</li>
-                    <li>Think aloud/ observation</li>
-                        <Ol>
-                            <li>Think aloud/observation sessions during the user’s completion of each benchmark task.</li>
-                        </Ol>
-                    <li>Semi-structured Interview</li>
-                        <Ol>
-                            <li>Follow-up question after completion of each task</li>
-                            <li>Final questions to understand overall experience of the user</li>
-                        </Ol>
-                    <li>Desirability Testing</li>
-                        <Ol>
-                            <li>Following the completion of the benchmark tasks, users selected 5-10 words that most aligned with their perceptions / experiences.</li>
-                        </Ol>
-                    <li>System Usability Scale (SUS)</li>
-                        <Ol>
-                            <li>At the end of each session each user filled out the 10 standard questions for SUS.</li>
-                        </Ol>
-                </ol>
-
+                <GridBox>
+                    <div>
+                        <ol>
+                            <li>Introduction/overview of the system</li>
+                            <li>Think aloud/ observation</li>
+                                <Ol>
+                                    <li>Think aloud/observation sessions during the user’s completion of each benchmark task.</li>
+                                </Ol>
+                            <li>Semi-structured Interview</li>
+                                <Ol>
+                                    <li>Follow-up question after completion of each task</li>
+                                    <li>Final questions to understand overall experience of the user</li>
+                                </Ol>
+                            <li>Desirability Testing</li>
+                                <Ol>
+                                    <li>Following the completion of the benchmark tasks, users selected 5-10 words that most aligned with their perceptions / experiences.</li>
+                                </Ol>
+                            <li>System Usability Scale (SUS)</li>
+                                <Ol>
+                                    <li>At the end of each session each user filled out the 10 standard questions for SUS.</li>
+                                </Ol>
+                        </ol>
+                    </div>
+                    <div>
+                        <Button target="_blank" href="https://james122277.invisionapp.com/console/share/AV13R7KOH8">
+                            <span>View caregiver prototype</span>
+                        </Button>
+                        <br />
+                        <br />
+                        <br />
+                        <Button target="_blank" href="https://james122277.invisionapp.com/console/share/F513RAMORN">
+                            <span>View care-receiver prototype</span>
+                        </Button>
+                        <br />
+                        <br />
+                    </div>
+                </GridBox>
                 <P>There were three main parts of each interview: a think aloud followed by questions, an online SUS survey, and desirability analysis. I began each interview by introducing the general premise and goal of Family OS and the companion app. I then began the think-aloud portion of the interview by asking the participant to do a number of tasks using an InVision prototype of the system. The following are tasks that participants were tasked to complete:</P>
                 <ol>
                     <li><strong>View and interpret information in monitoring hub</strong></li>
