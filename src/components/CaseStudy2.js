@@ -480,9 +480,9 @@ let SecTitle = styled.h2`
     `}
      ${media.tablet`
     font-size:3.2rem;
-    `}
-    
+    `} 
 `;
+
 let SubTitle = styled.h3`
     font-weight: 600;
     font-size:2rem;
@@ -522,7 +522,7 @@ let BTitleA = styled.p`
 let Blockquote = styled.p`
     position: relative;
     margin: 40px auto;
-    font-size: 42px;
+    font-size: 40px;
     line-height: 50px;
     padding-left: 34px;
     border-left: 2px solid #C21717;
