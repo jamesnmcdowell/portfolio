@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 635 365" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-76.1772,-16.3937)">
+        <g transform="matrix(1,0,0,1,0,2.592e-05)">
+            <rect x="0" y="0" width="720" height="405" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,-115.606)">
+            <path d="M182.288,260.303C182.288,189.443 239.732,132 310.591,132C344.62,132 377.254,145.518 401.316,169.579C425.377,193.641 438.895,226.275 438.895,260.303C438.895,331.163 381.451,388.606 310.591,388.606C239.732,388.606 182.288,331.163 182.288,260.303Z" style="fill:rgb(0,151,167);fill-opacity:0.56;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,86.8481)">
+            <path d="M243.453,159.076C243.453,88.216 300.896,30.773 371.756,30.773C405.784,30.773 438.419,44.29 462.48,68.352C486.542,92.413 500.059,125.048 500.059,159.076C500.059,229.936 442.616,287.379 371.756,287.379C300.896,287.379 243.453,229.936 243.453,159.076Z" style="fill:rgb(255,249,63);fill-opacity:0.55;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,-100.268)">
+            <path d="M305.004,252.634C305.004,181.774 362.447,124.331 433.307,124.331C467.335,124.331 499.97,137.848 524.031,161.91C548.093,185.971 561.61,218.606 561.61,252.634C561.61,323.494 504.167,380.937 433.307,380.937C362.447,380.937 305.004,323.494 305.004,252.634Z" style="fill:rgb(255,171,64);fill-opacity:0.6;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,-182.319)">
+            <rect x="76.177" y="274.053" width="131.197" height="39.213" style="fill-opacity:0;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,317.661)">
+            <rect x="182.287" y="24.063" width="131.197" height="39.213" style="fill-opacity:0;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,-182.319)">
+            <rect x="579.187" y="274.053" width="131.197" height="39.213" style="fill-opacity:0;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,-78.874)">
+            <rect x="313.484" y="222.331" width="166.677" height="39.213" style="fill-opacity:0;"/>
+        </g>
+        <text x="82.927px" y="111.924px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;fill:rgb(36,36,36);">R<tspan x="92.242px 100.291px 108.293px 116.343px 126.464px 135.779px 145.927px " y="111.924px 111.924px 111.924px 111.924px 111.924px 111.924px 111.924px ">ESEARCH</tspan></text>
+        <text x="189.037px" y="361.914px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;fill:rgb(36,36,36);">D<tspan x="199.806px 207.675px 215.497px 219.812px 230.211px " y="361.914px 361.914px 361.914px 361.914px 361.914px ">ESIGN</tspan></text>
+        <text x="585.937px" y="111.924px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:14px;fill:rgb(36,36,36);">D<tspan x="596.814px 604.793px 614.338px 622.317px 630.172px 641.439px 649.569px 662.018px 669.997px 680.731px " y="111.924px 111.924px 111.924px 111.924px 111.924px 111.924px 111.924px 111.924px 111.924px 111.924px ">EVELOPMENT</tspan></text>
+        <g>
+            <text x="320.234px" y="167.487px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:rgb(36,36,36);">A<tspan x="333.289px 346.378px 359.467px 369.858px 380.188px 390.518px 396.339px 407.327px 417.56px " y="167.487px 167.487px 167.487px 167.487px 167.487px 167.487px 167.487px 167.487px 167.487px ">CCESSIBLE</tspan></text>
+            <text x="320.234px" y="189.237px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:18px;fill:rgb(36,36,36);">D<tspan x="334.155px 344.349px 354.481px 360.104px 373.55px " y="189.237px 189.237px 189.237px 189.237px 189.237px ">ESIGN</tspan></text>
+        </g>
+    </g>
+</svg>
