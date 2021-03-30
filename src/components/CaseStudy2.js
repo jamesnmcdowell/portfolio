@@ -522,7 +522,6 @@ let BTitleA = styled.p`
 let Blockquote = styled.p`
     position: relative;
     margin: 40px auto;
-    width: 400px;
     font-size: 42px;
     line-height: 50px;
     padding-left: 34px;
