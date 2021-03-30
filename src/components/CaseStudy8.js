@@ -170,18 +170,18 @@ let CaseStudy8 = ({ item }) => {
                     </div>
                 </GridBox>
 
-                <SubTitle>User Journeys</SubTitle>
+                <SubTitle>Empathy Maps</SubTitle>
                 <GridBox>
                     <div>
                         <ImageZoom
                             image={{
                                 src: empathy1,
-                                alt: 'user journey for Olivia',
+                                alt: 'empathy map for Olivia',
                                 style: { width: '100%' }
                             }}
                             zoomImage={{
                                 src: empathy1,
-                                alt: 'user journey for Olivia'
+                                alt: 'empathy map for Olivia'
                             }}
                         />
                     </div>
