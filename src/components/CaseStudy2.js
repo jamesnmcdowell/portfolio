@@ -21,6 +21,8 @@ import chatbot from '../assets/chatbot.jpg';
 import prototype  from '../assets/prototype-ordering.jpg';
 import cw from '../assets/cognitive-walkthrough.jpg';
 import interviewing from '../assets/interviewing.jpg';
+import researchProccess from '../assets/research-process.svg';
+import designChart from '../assets/design-chart.svg';
 
 
 let CaseStudy2 = ({ item }) => {
@@ -51,9 +53,27 @@ let CaseStudy2 = ({ item }) => {
 
                 <SecTitle>Research {"&"} Results</SecTitle>
 
+                <ImageZoom
+                    image={{
+                        src: researchProccess,
+                        alt: 'research proccess map',
+                        style: { width: '100%' }
+                    }}
+                    zoomImage={{
+                        src: researchProccess,
+                        alt: 'research proccess map'
+                    }}
+                />
                 <SubTitle>Exploratory Research</SubTitle>
-                <P>Due to the fact that this project is in collaboration with Focus Brands, we have access to some of Schlotzsky’s user data. This helped up to understand the user base and crafting personas.  We extensively researched the Web Content Accessibility Guidelines (WCAG 2.1). These standards included specifications relating to color, contrast, fonts, text, size, ease of use, information flow, structure, and position. We completed a competitive analysis with other products in the market as well as products which are not in direct competition but share similarities with our product. We performed a thorough task analysis to understand the task flow and information flow of the ordering platform.</P>
+                <GridBox>   
+                    <div>
+                        <P>Due to the fact that this project is in collaboration with Focus Brands, we have access to some of Schlotzsky’s user data. This helped up to understand the user base and crafting personas.  We extensively researched the Web Content Accessibility Guidelines (WCAG 2.1). These standards included specifications relating to color, contrast, fonts, text, size, ease of use, information flow, structure, and position. We completed a competitive analysis with other products in the market as well as products which are not in direct competition but share similarities with our product. We performed a thorough task analysis to understand the task flow and information flow of the ordering platform.</P>
+                    </div>
+                    <div>
+                        <Blockquote>Automated testing tools ≠ accessibility</Blockquote>
 
+                    </div>
+                </GridBox>  
                 <SubTitle>Task Analysis</SubTitle>
                 <P>We conducted task analysis to understand users’ goals when they are ordering from the Schlotzsky’s website and how they are able to complete their goal on the site. Conducting task analysis also allowed us to catch navigational issues on the website and understand the navigation process at a more granular level. Performing a task analysis provided us with a baseline for the interactions with the system which helped inform our interview questions and direction with further research methods. </P>
                 <ImageZoom
@@ -390,11 +410,18 @@ let CaseStudy2 = ({ item }) => {
 
 				<SubTitle>System Usability Scale (SUS)</SubTitle>
 				<BTitle>Average score: 90.83 </BTitle>
-								
-				<SecTitle>Project Reflection </SecTitle>
-				<p>This was overall an extremely ambitious and rewarding project. Entering into the area of accessible design initially feels nearly overwhelming due to the complexities that exist within this set of users that most designers don’t really understand. The challenge of this project, however, is what largely contributed to what made it so exciting to work on.  Due to the poor state of accessible design within food ordering platforms and the digital space at large, we were able to make a large impact within this space and create experiences for users that were superior to their typical alternatives.  </p>
-				<p>It was surprising to me that accessible-first design really helped me focus on the information architecture more acutely without becoming distracted too early by visual design due to the fact that screen readers require no visual design whatsoever. From the perspective of development, it was definitely a challenge challenge due to the  fact that users can choose from  a variety screen readers running on a variety of operating systems and web browsers.</p>
+                <SecTitle>Project Reflection </SecTitle>
 
+                <GridBox>
+                    <div>
+                        <p>This was overall an extremely ambitious and rewarding project. Entering into the area of accessible design initially feels nearly overwhelming due to the complexities that exist within this set of users that most designers don’t really understand. The challenge of this project, however, is what largely contributed to what made it so exciting to work on.  Due to the poor state of accessible design within food ordering platforms and the digital space at large, we were able to make a large impact within this space and create experiences for users that were superior to their typical alternatives.  </p>
+                        <p>Accessible design is only truly realized by working through the user-centered design process. We need to design for differences in abilities and offer stunning experiences no matter how users interact with an interface. Ultimately, accessible designs make intefaces more usable for everyone. When you’re designing for accessibility for those with visual impairments, you can’t fall back on visual design. This forces you to focus on information architecture at its core. Users of screen readers typically read through a website linearly so if there’s a giant list of things to read through, it becomes a mess. This forces the designer to break down the process and information into logical, digestible chunks in order to streamline the user’s experience. </p>
+                    </div>
+                    <div>
+                        <Blockquote>Accessible design makes interfaces more usable for everyone.</Blockquote>
+                        <Img src={designChart} />
+                    </div>
+                </GridBox>
             </GridContainer>
         </Container>
     );
@@ -490,4 +517,14 @@ let BTitleA = styled.p`
     font-size: 18px;
     font-weight: 600;
     color: #C21717;
+`;
+
+let Blockquote = styled.p`
+    position: relative;
+    margin: 40px auto;
+    width: 400px;
+    font-size: 42px;
+    line-height: 50px;
+    padding-left: 34px;
+    border-left: 2px solid #C21717;
 `;
