@@ -67,7 +67,7 @@
             "items": [
                 {
                     "name": [
-                        "UX Designer | Hewlett Packard Enterprise (HPE)"
+                        "UX Researcher/ Designer | Hewlett Packard Enterprise (HPE)"
                     ],
                     "date": "5/2019 - 8/2019 | Fort Collins, CO",
                     "text": "Worked on both research and design efforts within the Chief Design Office (CDO)",
@@ -80,14 +80,19 @@
                 },
                 {
                     "name": [
-                        "Graduate Research Assistant | Georgia Tech"
+                        "UX Designer & Front-end Developer | Freelance"
                     ],
-                    "date": "1/2019 - 5/2019 | Atlanta, GA",
-                    "text": "Design & Development of digital platform to assist learners and teachers of Persian language"
+                    "date": "9/2016 - 8/2018 | Atlanta, GA",
+                    "text": "Designed and developed for clients using Sketch, CSS, and React",
+                    "arrayType": "bullet",
+                    "textArray": [
+                        "Conducted competitive analysis and developed brand identity",
+                        "Conceptualized information architecture and wireframes for websites"
+                    ]
                 },
                 {
                     "name": [
-                        "Front-end Developer & Designer | Cool Blue Interactive"
+                        "UX Designer & Front-end Developer | Cool Blue Interactive"
                     ],
                     "date": "7/2017 - 11/2017 | Atlanta, GA",
                     "text": "Designed & developed JavaScript applications and websites",
@@ -105,7 +110,7 @@
             "items": [
                 {
                     "name": [
-                        "M.S. Human-Computer Interaction"
+                        "M.S. Human-Computer Interaction | GPA 4.0/4.0"
                     ],
                     "date": "08/2018 - 05/2020 | Atlanta, GA",
                     "text": "Georgia Institute of Technology",
@@ -130,7 +135,7 @@
                 {
                     "name": [
                         "B.S. Applied Lang. & Intercultural Studies",
-                        "B.S.InternationalAffairs| GPA3.88/4.0"
+                        "B.S.InternationalAffairs| GPA 3.88/4.0"
                     ],
                     "date": "2013, 2014 | College Park, MD",
                     "text": "University of Maryland",
